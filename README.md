@@ -2,6 +2,16 @@
 
 Narrative-first benchmark observatory comparing ARC-AGI and Humanity's Last Exam across multiple capability dimensions.
 
+## Live interactive
+
+- https://mathias3.github.io/BenchmarkAtlas/
+
+## Preview charts
+
+![Efficiency Illusion Map](assets/charts/efficiency-map.svg)
+![Confidence vs Competence](assets/charts/confidence-lens.svg)
+![Transfer Gap Matrix](assets/charts/transfer-gap.svg)
+
 ## Current status
 
 Phase 1 foundation is implemented:

@@ -74,6 +74,33 @@ def _as_list(payload: Any) -> list[dict[str, Any]]:
             value = payload.get(candidate)
             if isinstance(value, list):
                 return [x for x in value if isinstance(x, dict)]
+
+        # Fallback: recursively collect dict-like records in nested payloads.
+        records: list[dict[str, Any]] = []
+
+        def _walk(node: Any) -> None:
+            if isinstance(node, list):
+                for child in node:
+                    _walk(child)
+            elif isinstance(node, dict):
+                if any(
+                    key in node
+                    for key in (
+                        "model",
+                        "model_name",
+                        "name",
+                        "hle",
+                        "score",
+                        "calibration_error",
+                        "cost_per_task",
+                    )
+                ):
+                    records.append(node)
+                for value in node.values():
+                    _walk(value)
+
+        _walk(payload)
+        return records
     return []
 
 
