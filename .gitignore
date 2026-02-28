@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+.pytest_cache/
+data/sources/*
+!data/sources/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+site/data.json
+assets/charts/*
+!assets/charts/.gitkeep
+brainstorm/
+AGI-GAP-ATLAS-PLAN.md
+visualization-patterns-playbook.md
+REPOKIT-ASSESSMENT.md

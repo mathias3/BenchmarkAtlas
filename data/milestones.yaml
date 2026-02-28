@@ -1,0 +1,11 @@
+# Curated benchmark milestone placeholders for VIZ 5 (moving goalpost engine)
+# Replace with verified historical values before publication.
+milestones:
+  - date: "2023-01-01"
+    benchmark: "ARC-AGI"
+    score: 5
+    note: "Baseline public model performance"
+  - date: "2025-01-01"
+    benchmark: "HLE"
+    score: 10
+    note: "HLE launch-era reference"

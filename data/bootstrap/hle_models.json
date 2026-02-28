@@ -1,0 +1,26 @@
+[
+  {
+    "model": "gpt-4o-2024-08-06",
+    "provider": "OpenAI",
+    "hle": 29.0,
+    "calibration_error": 0.12,
+    "arc_agi_2": 41.0,
+    "release_date": "2024-08-06"
+  },
+  {
+    "model": "claude-3-5-sonnet-20241022",
+    "provider": "Anthropic",
+    "hle": 31.5,
+    "calibration_error": 0.09,
+    "arc_agi_2": 37.0,
+    "release_date": "2024-10-22"
+  },
+  {
+    "model": "gemini-1.5-pro",
+    "provider": "Google",
+    "hle": 26.0,
+    "calibration_error": 0.15,
+    "arc_agi_2": 34.0,
+    "release_date": "2024-06-27"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "model": "GPT-4o",
+    "provider": "OpenAI",
+    "score": 42.0,
+    "cost_per_task": 0.8,
+    "tasks_evaluated": 120,
+    "release_date": "2024-08-06"
+  },
+  {
+    "model": "Claude 3.5 Sonnet",
+    "provider": "Anthropic",
+    "score": 38.0,
+    "cost_per_task": 0.22,
+    "tasks_evaluated": 120,
+    "release_date": "2024-10-22"
+  },
+  {
+    "model": "Gemini 1.5 Pro",
+    "provider": "Google",
+    "score": 33.0,
+    "cost_per_task": 0.35,
+    "tasks_evaluated": 120,
+    "release_date": "2024-06-27"
+  }
+]

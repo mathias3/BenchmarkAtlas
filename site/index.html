@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGI Gap Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  </head>
+  <body>
+    <main class="layout">
+      <section class="hero">
+        <p class="kicker">AGI Gap Atlas</p>
+        <h1>Capability is not one number.</h1>
+        <p>
+          This observatory maps where benchmark scores align with real usefulness and where they diverge across
+          efficiency, calibration, and transfer.
+        </p>
+      </section>
+
+      <section class="chart-card" id="chart-timeline-card">
+        <header>
+          <h2>Twin Rivers Timeline</h2>
+          <p class="subtitle">How progress differs across ARC-AGI and HLE over release time.</p>
+          <p class="meta"><span id="timeline-source"></span> <span id="timeline-note"></span></p>
+        </header>
+        <div id="chart-timeline" class="chart"></div>
+      </section>
+
+      <section class="chart-card" id="chart-efficiency-card">
+        <header>
+          <h2>Efficiency Illusion Map</h2>
+          <p class="subtitle">Do higher ARC scores come from smarter models, higher cost, or both?</p>
+          <p class="meta"><span id="efficiency-source"></span> <span id="efficiency-note"></span></p>
+        </header>
+        <div id="chart-efficiency" class="chart"></div>
+      </section>
+
+      <section class="chart-card" id="chart-confidence-card">
+        <header>
+          <h2>Confidence vs Competence Lens</h2>
+          <p class="subtitle">A model is safer when it is accurate and well-calibrated.</p>
+          <p class="meta"><span id="confidence-source"></span> <span id="confidence-note"></span></p>
+        </header>
+        <div id="chart-confidence" class="chart"></div>
+      </section>
+
+      <section class="chart-card" id="chart-transfer-card">
+        <header>
+          <h2>Transfer Gap Matrix</h2>
+          <p class="subtitle">How much does ARC-AGI score differ from HLE score for the same model?</p>
+          <p class="meta"><span id="transfer-source"></span> <span id="transfer-note"></span></p>
+        </header>
+        <div id="chart-transfer" class="chart"></div>
+      </section>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

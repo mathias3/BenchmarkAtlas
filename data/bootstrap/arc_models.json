@@ -1,0 +1,5 @@
+[
+  {"model": "GPT-4o", "provider": "OpenAI", "release_date": "2024-08-06"},
+  {"model": "Claude 3.5 Sonnet", "provider": "Anthropic", "release_date": "2024-10-22"},
+  {"model": "Gemini 1.5 Pro", "provider": "Google", "release_date": "2024-06-27"}
+]
