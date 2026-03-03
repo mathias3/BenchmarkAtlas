@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import re
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
@@ -89,9 +89,12 @@ def _as_list(payload: Any) -> list[dict[str, Any]]:
                         "model",
                         "model_name",
                         "name",
+                        "modelId",
                         "hle",
                         "score",
+                        "scores",
                         "calibration_error",
+                        "costPerTask",
                         "cost_per_task",
                     )
                 ):
@@ -133,9 +136,40 @@ def _to_int(value: Any) -> int | None:
     return None
 
 
+def _normalize_alias_key(name: str) -> str:
+    normalized = name.strip().lower()
+    normalized = normalized.replace("_", "-")
+    normalized = re.sub(r"-(\d{4}-\d{2}-\d{2}|\d{8}|\d{6})$", "", normalized)
+    normalized = re.sub(r"[^a-z0-9-]+", "-", normalized)
+    normalized = re.sub(r"-+", "-", normalized)
+    return normalized.strip("-")
+
+
 def _canonical_name(name: str, aliases: dict[str, str]) -> str:
-    alias = aliases.get(name.lower())
-    return alias if alias else name
+    raw = name.strip()
+    candidates = (
+        raw.lower(),
+        raw.lower().replace("_", "-"),
+        _slugify(raw),
+        _normalize_alias_key(raw),
+        _normalize_alias_key(_slugify(raw)),
+    )
+    for candidate in candidates:
+        alias = aliases.get(candidate)
+        if alias:
+            return alias
+    return raw
+
+
+def _flatten_hle_record(item: dict[str, Any]) -> dict[str, Any]:
+    """Flatten HLE API records that nest scores inside a 'scores' sub-object."""
+    flat = dict(item)
+    scores = item.get("scores")
+    if isinstance(scores, dict):
+        for key, value in scores.items():
+            if key not in flat:
+                flat[key] = value
+    return flat
 
 
 def normalize_sources() -> list[UnifiedModelRecord]:
@@ -156,6 +190,8 @@ def normalize_sources() -> list[UnifiedModelRecord]:
         model_name = _extract_first(item, MODEL_KEY_CANDIDATES)
         if not isinstance(model_name, str):
             continue
+        if item.get("display") is False:
+            continue
         canonical = _canonical_name(model_name, aliases)
         arc_model_meta[canonical] = item
 
@@ -163,6 +199,9 @@ def normalize_sources() -> list[UnifiedModelRecord]:
         model_name = _extract_first(item, MODEL_KEY_CANDIDATES)
         if not isinstance(model_name, str):
             continue
+        if item.get("display") is False:
+            continue
+
         canonical = _canonical_name(model_name, aliases)
         model_key = _slugify(canonical)
 
@@ -175,6 +214,17 @@ def normalize_sources() -> list[UnifiedModelRecord]:
             or _extract_first(arc_meta, ("release_date", "releaseDate", "created_at", "date"))
         )
 
+        arc_score = _to_float(_extract_first(item, ("score", "overall_score", "pass_rate", "accuracy")))
+        arc_cost = _to_float(
+            _extract_first(item, ("costPerTask", "cost_per_task", "cost", "usd_per_task"))
+        )
+        arc_tasks = _to_int(
+            _extract_first(
+                item,
+                ("tasks_evaluated", "tasksEvaluated", "num_tasks", "n_tasks", "sample_size"),
+            )
+        )
+
         record = model_index.get(model_key)
         if record is None:
             record = UnifiedModelRecord(
@@ -182,11 +232,9 @@ def normalize_sources() -> list[UnifiedModelRecord]:
                 canonical_name=canonical,
                 provider=str(provider) if provider else None,
                 release_date=str(release_date) if release_date else None,
-                arc_score=_to_float(_extract_first(item, ("score", "overall_score", "pass_rate", "accuracy"))),
-                arc_cost_per_task=_to_float(_extract_first(item, ("cost_per_task", "cost", "usd_per_task"))),
-                arc_tasks_evaluated=_to_int(
-                    _extract_first(item, ("tasks_evaluated", "num_tasks", "n_tasks", "sample_size"))
-                ),
+                arc_score=arc_score,
+                arc_cost_per_task=arc_cost,
+                arc_tasks_evaluated=arc_tasks,
                 hle_score=None,
                 calibration_error=None,
                 hle_arc_agi_2=None,
@@ -194,23 +242,40 @@ def normalize_sources() -> list[UnifiedModelRecord]:
                 source_hle=None,
             )
             model_index[model_key] = record
-        else:
-            record.arc_score = record.arc_score or _to_float(
-                _extract_first(item, ("score", "overall_score", "pass_rate", "accuracy"))
+            continue
+
+        if record.provider is None and provider is not None:
+            record.provider = str(provider)
+        if record.release_date is None and release_date is not None:
+            record.release_date = str(release_date)
+        if arc_score is not None:
+            record.arc_score = max(record.arc_score, arc_score) if record.arc_score is not None else arc_score
+        if arc_cost is not None:
+            record.arc_cost_per_task = (
+                min(record.arc_cost_per_task, arc_cost) if record.arc_cost_per_task is not None else arc_cost
             )
-            record.arc_cost_per_task = record.arc_cost_per_task or _to_float(
-                _extract_first(item, ("cost_per_task", "cost", "usd_per_task"))
+        if arc_tasks is not None:
+            record.arc_tasks_evaluated = (
+                max(record.arc_tasks_evaluated, arc_tasks)
+                if record.arc_tasks_evaluated is not None
+                else arc_tasks
             )
 
-    for item in hle_models:
+    for raw_item in hle_models:
+        item = _flatten_hle_record(raw_item)
         model_name = _extract_first(item, MODEL_KEY_CANDIDATES)
         if not isinstance(model_name, str):
             continue
+
         canonical = _canonical_name(model_name, aliases)
         model_key = _slugify(canonical)
 
         provider = _extract_first(item, PROVIDER_KEY_CANDIDATES)
         release_date = _extract_first(item, ("release_date", "releaseDate", "created_at", "date"))
+
+        hle_score = _to_float(_extract_first(item, ("hle", "score", "accuracy")))
+        calibration_error = _to_float(_extract_first(item, ("calibration_error", "ece")))
+        hle_arc = _to_float(_extract_first(item, ("arc_agi_2", "arc", "arc_score")))
 
         record = model_index.get(model_key)
         if record is None:
@@ -222,24 +287,30 @@ def normalize_sources() -> list[UnifiedModelRecord]:
                 arc_score=None,
                 arc_cost_per_task=None,
                 arc_tasks_evaluated=None,
-                hle_score=_to_float(_extract_first(item, ("hle", "score", "accuracy"))),
-                calibration_error=_to_float(_extract_first(item, ("calibration_error", "ece"))),
-                hle_arc_agi_2=_to_float(_extract_first(item, ("arc_agi_2", "arc", "arc_score"))),
+                hle_score=hle_score,
+                calibration_error=calibration_error,
+                hle_arc_agi_2=hle_arc,
                 source_arc=None,
                 source_hle="https://dashboard.safe.ai/api/models",
             )
             model_index[model_key] = record
-        else:
-            record.hle_score = record.hle_score or _to_float(
-                _extract_first(item, ("hle", "score", "accuracy"))
+            continue
+
+        if record.provider is None and provider is not None:
+            record.provider = str(provider)
+        if record.release_date is None and release_date is not None:
+            record.release_date = str(release_date)
+        if hle_score is not None:
+            record.hle_score = max(record.hle_score, hle_score) if record.hle_score is not None else hle_score
+        if calibration_error is not None:
+            record.calibration_error = (
+                min(record.calibration_error, calibration_error)
+                if record.calibration_error is not None
+                else calibration_error
             )
-            record.calibration_error = record.calibration_error or _to_float(
-                _extract_first(item, ("calibration_error", "ece"))
-            )
-            record.hle_arc_agi_2 = record.hle_arc_agi_2 or _to_float(
-                _extract_first(item, ("arc_agi_2", "arc", "arc_score"))
-            )
-            record.source_hle = "https://dashboard.safe.ai/api/models"
+        if hle_arc is not None:
+            record.hle_arc_agi_2 = hle_arc
+        record.source_hle = "https://dashboard.safe.ai/api/models"
 
     return list(model_index.values())
 

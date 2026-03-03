@@ -11,23 +11,41 @@ async function loadData() {
   return res.json();
 }
 
-function writeMeta(idPrefix, payload) {
+function writeMeta(idPrefix, payload, modelCount) {
   const sourceEl = document.getElementById(`${idPrefix}-source`);
   const noteEl = document.getElementById(`${idPrefix}-note`);
   if (sourceEl) {
-    sourceEl.textContent = `Source: ${payload.source}`;
+    sourceEl.textContent = `${modelCount} models | Source: ${payload.source}`;
   }
   if (noteEl) {
     noteEl.textContent = `Assumption: ${payload.assumption_note}`;
   }
 }
 
+function writeLastRefresh(generatedAt) {
+  const lastRefreshEl = document.getElementById("last-refresh");
+  if (!lastRefreshEl || !generatedAt) {
+    return;
+  }
+
+  const date = new Date(generatedAt);
+  if (Number.isNaN(date.getTime())) {
+    lastRefreshEl.textContent = `Last refresh: ${generatedAt}`;
+    return;
+  }
+
+  lastRefreshEl.textContent = `Last refresh: ${date.toLocaleString()}`;
+}
+
 function renderAll(dataset) {
   const data = dataset.data;
-  writeMeta("timeline", data.twin_rivers);
-  writeMeta("efficiency", data.efficiency_map);
-  writeMeta("confidence", data.confidence_lens);
-  writeMeta("transfer", data.transfer_gap);
+  const modelCount = data?.summary?.model_count ?? 0;
+
+  writeMeta("timeline", data.twin_rivers, modelCount);
+  writeMeta("efficiency", data.efficiency_map, modelCount);
+  writeMeta("confidence", data.confidence_lens, modelCount);
+  writeMeta("transfer", data.transfer_gap, modelCount);
+  writeLastRefresh(dataset.generated_at);
 
   renderTwinRivers("#chart-timeline", data.twin_rivers.points);
   renderEfficiencyMap("#chart-efficiency", data.efficiency_map);
@@ -35,6 +53,8 @@ function renderAll(dataset) {
   renderTransferGap("#chart-transfer", data.transfer_gap);
 }
 
-loadData().then(renderAll).catch((err) => {
-  document.body.innerHTML = `<main class=\"layout\"><section class=\"chart-card\"><h2>Data load error</h2><p>${err.message}</p></section></main>`;
-});
+loadData()
+  .then(renderAll)
+  .catch((err) => {
+    document.body.innerHTML = `<main class=\"layout\"><section class=\"chart-card\"><h2>Data load error</h2><p>${err.message}</p></section></main>`;
+  });

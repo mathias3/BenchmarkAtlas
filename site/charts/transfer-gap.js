@@ -1,8 +1,11 @@
-import { setupSvg } from "./utils.js";
+import { addLegend } from "./legend.js";
+import { createTooltip } from "./tooltip.js";
+import { COLORS, setupSvg } from "./utils.js";
 
 export function renderTransferGap(containerSelector, payload) {
-  const points = (payload.points || []).slice(0, 18);
-  const { svg, margin, innerWidth, innerHeight } = setupSvg(containerSelector, 460);
+  const points = payload.points || [];
+  const chartHeight = Math.max(460, points.length * 28 + 90);
+  const { svg, margin, innerWidth, innerHeight } = setupSvg(containerSelector, chartHeight);
   const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
   if (!points.length) {
@@ -25,6 +28,8 @@ export function renderTransferGap(containerSelector, payload) {
   g.append("g").attr("class", "axis").call(d3.axisLeft(y));
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x));
 
+  const tooltip = createTooltip();
+
   g.selectAll("line.gap")
     .data(points)
     .join("line")
@@ -33,7 +38,15 @@ export function renderTransferGap(containerSelector, payload) {
     .attr("y1", (d) => y(d.model) + y.bandwidth() / 2)
     .attr("y2", (d) => y(d.model) + y.bandwidth() / 2)
     .attr("stroke", "#a8bbb0")
-    .attr("stroke-width", 2);
+    .attr("stroke-width", 2)
+    .on("mouseenter", (event, d) => {
+      tooltip.show(
+        event,
+        `<strong>${d.model}</strong><br/>ARC-AGI: ${d.arc_agi_2?.toFixed(1)}<br/>HLE: ${d.hle?.toFixed(1)}<br/>Gap: ${d.gap >= 0 ? "+" : ""}${d.gap?.toFixed(1)}`
+      );
+    })
+    .on("mousemove", (event) => tooltip.move(event))
+    .on("mouseleave", () => tooltip.hide());
 
   g.selectAll("circle.arc")
     .data(points)
@@ -41,7 +54,7 @@ export function renderTransferGap(containerSelector, payload) {
     .attr("cx", (d) => x(d.arc_agi_2))
     .attr("cy", (d) => y(d.model) + y.bandwidth() / 2)
     .attr("r", 4)
-    .attr("fill", "#0f766e");
+    .attr("fill", COLORS.arc);
 
   g.selectAll("circle.hle")
     .data(points)
@@ -49,7 +62,24 @@ export function renderTransferGap(containerSelector, payload) {
     .attr("cx", (d) => x(d.hle))
     .attr("cy", (d) => y(d.model) + y.bandwidth() / 2)
     .attr("r", 4)
-    .attr("fill", "#b91c1c");
+    .attr("fill", COLORS.hle);
+
+  g.selectAll("text.gap")
+    .data(points)
+    .join("text")
+    .attr("class", "gap-label")
+    .attr("x", (d) => x(Math.max(d.arc_agi_2, d.hle)) + 6)
+    .attr("y", (d) => y(d.model) + y.bandwidth() / 2 + 3)
+    .text((d) => `${d.gap >= 0 ? "+" : ""}${d.gap.toFixed(1)}`);
+
+  addLegend(
+    g,
+    [
+      { label: "ARC-AGI", color: COLORS.arc },
+      { label: "HLE", color: COLORS.hle },
+    ],
+    { x: 0, y: -8, itemGap: 92 }
+  );
 
   g.append("text").attr("x", innerWidth / 2).attr("y", innerHeight + 34).attr("text-anchor", "middle").text("Score (%)");
 }

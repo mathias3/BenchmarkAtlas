@@ -24,6 +24,11 @@
         </p>
       </section>
 
+      <div class="insight-callout">
+        Four visualizations that decompose capability into distinct dimensions - progress trajectory, cost efficiency,
+        confidence calibration, and cross-benchmark transfer.
+      </div>
+
       <section class="chart-card" id="chart-timeline-card">
         <header>
           <h2>Twin Rivers Timeline</h2>
@@ -32,6 +37,11 @@
         </header>
         <div id="chart-timeline" class="chart"></div>
       </section>
+
+      <div class="insight-callout">
+        Progress on ARC-AGI and HLE does not move in lockstep. Some models advance on symbolic reasoning while
+        stalling on broad knowledge.
+      </div>
 
       <section class="chart-card" id="chart-efficiency-card">
         <header>
@@ -42,6 +52,11 @@
         <div id="chart-efficiency" class="chart"></div>
       </section>
 
+      <div class="insight-callout">
+        The highest-scoring models are often NOT the most efficient. Some achieve comparable performance at a
+        fraction of the cost.
+      </div>
+
       <section class="chart-card" id="chart-confidence-card">
         <header>
           <h2>Confidence vs Competence Lens</h2>
@@ -51,6 +66,11 @@
         <div id="chart-confidence" class="chart"></div>
       </section>
 
+      <div class="insight-callout">
+        A model that scores 40% but knows when it's wrong is more useful than one that scores 45% but is confidently
+        incorrect.
+      </div>
+
       <section class="chart-card" id="chart-transfer-card">
         <header>
           <h2>Transfer Gap Matrix</h2>
@@ -58,6 +78,15 @@
           <p class="meta"><span id="transfer-source"></span> <span id="transfer-note"></span></p>
         </header>
         <div id="chart-transfer" class="chart"></div>
+      </section>
+
+      <section class="chart-card closing-card">
+        <h2>Capability is not one number.</h2>
+        <p>
+          Looking at progress, efficiency, calibration, and transfer together reveals where benchmark gains are durable
+          and where they are brittle.
+        </p>
+        <p class="meta" id="last-refresh"></p>
       </section>
     </main>
 
