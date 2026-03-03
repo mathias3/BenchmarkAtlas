@@ -134,8 +134,12 @@ svg {
   color: #30412f;
 }
 
-.closing-card {
+.summary-panel {
   margin-top: 1.8rem;
+  background: #edf3ea;
+  border: 1px solid #c8d6c8;
+  border-radius: 14px;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {

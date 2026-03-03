@@ -8,7 +8,10 @@ export function renderConfidenceLens(containerSelector, payload) {
   const g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
   if (!points.length) {
-    g.append("text").text("No confidence data available").attr("x", 10).attr("y", 20);
+    g.append("text")
+      .text("No confidence data available from current source fields")
+      .attr("x", 10)
+      .attr("y", 20);
     return;
   }
 

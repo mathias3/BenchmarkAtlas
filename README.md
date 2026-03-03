@@ -8,9 +8,11 @@ Narrative-first benchmark observatory comparing ARC-AGI and Humanity's Last Exam
 
 ## Preview charts
 
-![Efficiency Illusion Map](assets/charts/efficiency-map.svg)
-![Confidence vs Competence](assets/charts/confidence-lens.svg)
-![Transfer Gap Matrix](assets/charts/transfer-gap.svg)
+The static SVG previews in `assets/charts/` are lightweight artifacts from pipeline exports and are not representative of the interactive dashboard quality.
+
+Use the live interactive view for actual chart experience:
+
+- https://mathias3.github.io/BenchmarkAtlas/
 
 ## Current status
 

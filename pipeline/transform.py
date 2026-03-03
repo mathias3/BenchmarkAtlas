@@ -169,6 +169,22 @@ def _flatten_hle_record(item: dict[str, Any]) -> dict[str, Any]:
         for key, value in scores.items():
             if key not in flat:
                 flat[key] = value
+        # Normalize common score-key variants to unified field names.
+        if "hle" not in flat:
+            for key in ("hleScore", "hle_score", "humanitys_last_exam", "humanitysLastExam"):
+                if key in scores:
+                    flat["hle"] = scores[key]
+                    break
+        if "calibration_error" not in flat:
+            for key in ("calibrationError", "calibration_error", "ece", "expected_calibration_error"):
+                if key in scores:
+                    flat["calibration_error"] = scores[key]
+                    break
+        if "arc_agi_2" not in flat:
+            for key in ("arcAgi2", "arc_agi_2", "arc", "arc_score"):
+                if key in scores:
+                    flat["arc_agi_2"] = scores[key]
+                    break
     return flat
 
 
@@ -273,9 +289,19 @@ def normalize_sources() -> list[UnifiedModelRecord]:
         provider = _extract_first(item, PROVIDER_KEY_CANDIDATES)
         release_date = _extract_first(item, ("release_date", "releaseDate", "created_at", "date"))
 
-        hle_score = _to_float(_extract_first(item, ("hle", "score", "accuracy")))
-        calibration_error = _to_float(_extract_first(item, ("calibration_error", "ece")))
-        hle_arc = _to_float(_extract_first(item, ("arc_agi_2", "arc", "arc_score")))
+        hle_score = _to_float(
+            _extract_first(
+                item,
+                ("hle", "hleScore", "hle_score", "humanitys_last_exam", "humanitysLastExam", "score", "accuracy"),
+            )
+        )
+        calibration_error = _to_float(
+            _extract_first(
+                item,
+                ("calibration_error", "calibrationError", "ece", "expected_calibration_error"),
+            )
+        )
+        hle_arc = _to_float(_extract_first(item, ("arc_agi_2", "arcAgi2", "arc", "arc_score")))
 
         record = model_index.get(model_key)
         if record is None:

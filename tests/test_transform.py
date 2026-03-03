@@ -15,6 +15,14 @@ def test_flatten_hle_scores_object():
     assert flat["calibration_error"] == 0.11
 
 
+def test_flatten_hle_scores_object_camel_case_keys():
+    row = {"name": "gpt-4o", "scores": {"hleScore": 33.0, "calibrationError": 0.08, "arcAgi2": 41.5}}
+    flat = transform._flatten_hle_record(row)
+    assert flat["hle"] == 33.0
+    assert flat["calibration_error"] == 0.08
+    assert flat["arc_agi_2"] == 41.5
+
+
 def test_normalize_sources_extracts_camel_case_cost_and_filters_display(monkeypatch, tmp_path):
     sources = tmp_path / "sources"
     processed = tmp_path / "processed"
