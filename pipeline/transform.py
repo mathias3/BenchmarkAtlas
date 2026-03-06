@@ -176,7 +176,7 @@ def _flatten_hle_record(item: dict[str, Any]) -> dict[str, Any]:
                     flat["hle"] = scores[key]
                     break
         if "calibration_error" not in flat:
-            for key in ("calibrationError", "calibration_error", "ece", "expected_calibration_error"):
+            for key in ("hle_calibration_error", "calibrationError", "calibration_error", "ece", "expected_calibration_error"):
                 if key in scores:
                     flat["calibration_error"] = scores[key]
                     break
@@ -230,7 +230,9 @@ def normalize_sources() -> list[UnifiedModelRecord]:
             or _extract_first(arc_meta, ("release_date", "releaseDate", "created_at", "date"))
         )
 
-        arc_score = _to_float(_extract_first(item, ("score", "overall_score", "pass_rate", "accuracy")))
+        raw_arc_score = _to_float(_extract_first(item, ("score", "overall_score", "pass_rate", "accuracy")))
+        # ARC API returns scores as 0-1 fractions; normalize to 0-100 percentages.
+        arc_score = raw_arc_score * 100.0 if raw_arc_score is not None and raw_arc_score <= 1.0 else raw_arc_score
         arc_cost = _to_float(
             _extract_first(item, ("costPerTask", "cost_per_task", "cost", "usd_per_task"))
         )
@@ -298,7 +300,7 @@ def normalize_sources() -> list[UnifiedModelRecord]:
         calibration_error = _to_float(
             _extract_first(
                 item,
-                ("calibration_error", "calibrationError", "ece", "expected_calibration_error"),
+                ("calibration_error", "hle_calibration_error", "calibrationError", "ece", "expected_calibration_error"),
             )
         )
         hle_arc = _to_float(_extract_first(item, ("arc_agi_2", "arcAgi2", "arc", "arc_score")))

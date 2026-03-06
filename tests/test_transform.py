@@ -23,6 +23,15 @@ def test_flatten_hle_scores_object_camel_case_keys():
     assert flat["arc_agi_2"] == 41.5
 
 
+def test_flatten_hle_calibration_error_prefixed():
+    """Real HLE API uses hle_calibration_error, not calibration_error."""
+    row = {"name": "Gemini 3.1 Pro", "scores": {"hle": 45.9, "hle_calibration_error": 50.3, "arc_agi_2": 73.33}}
+    flat = transform._flatten_hle_record(row)
+    assert flat["hle"] == 45.9
+    assert flat["calibration_error"] == 50.3
+    assert flat["arc_agi_2"] == 73.33
+
+
 def test_normalize_sources_extracts_camel_case_cost_and_filters_display(monkeypatch, tmp_path):
     sources = tmp_path / "sources"
     processed = tmp_path / "processed"
@@ -124,6 +133,28 @@ def test_multiple_arc_evals_choose_best_score_and_lowest_cost(monkeypatch, tmp_p
 def test_canonical_name_fuzzy_date_suffix_alias_match():
     aliases = {"claude-3-5-sonnet": "Claude 3.5 Sonnet"}
     assert transform._canonical_name("claude-3-5-sonnet-20241022", aliases) == "Claude 3.5 Sonnet"
+
+
+def test_arc_scores_normalized_to_percentage(monkeypatch, tmp_path):
+    """ARC API returns 0-1 fractions; pipeline should normalize to 0-100."""
+    sources = tmp_path / "sources"
+    aliases = tmp_path / "aliases.json"
+    sources.mkdir(parents=True)
+
+    (sources / "arc_models.json").write_text(json.dumps([]), encoding="utf-8")
+    (sources / "hle_models.json").write_text(json.dumps([]), encoding="utf-8")
+    (sources / "arc_evaluations.json").write_text(
+        json.dumps([{"modelId": "test-model", "score": 0.42, "costPerTask": 0.5}]),
+        encoding="utf-8",
+    )
+    aliases.write_text(json.dumps({}), encoding="utf-8")
+
+    monkeypatch.setattr(transform, "SOURCES_DIR", sources)
+    monkeypatch.setattr(transform, "ALIASES_PATH", aliases)
+
+    rows = transform.normalize_sources()
+    assert len(rows) == 1
+    assert rows[0].arc_score == 42.0  # 0.42 * 100
 
 
 def test_pareto_frontier_with_realistic_shape_fields():

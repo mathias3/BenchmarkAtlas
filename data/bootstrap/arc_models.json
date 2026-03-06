@@ -1,5 +1,3093 @@
 [
-  {"model": "GPT-4o", "provider": "OpenAI", "release_date": "2024-08-06"},
-  {"model": "Claude 3.5 Sonnet", "provider": "Anthropic", "release_date": "2024-10-22"},
-  {"model": "Gemini 1.5 Pro", "provider": "Google", "release_date": "2024-06-27"}
+  {
+    "id": "2025_human_panel",
+    "displayName": "Human Panel",
+    "modelReleaseDate": null,
+    "providerId": "Human",
+    "modelType": null,
+    "modelGroup": "Human",
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "ARChitects",
+    "displayName": "ARChitects",
+    "modelReleaseDate": "2024-11-03T00:00:00.000Z",
+    "providerId": "ARC Prize 2024",
+    "modelType": "Custom",
+    "modelGroup": "Kaggle",
+    "paperUrl": "https://github.com/da-fr/arc-prize-2024/blob/main/the_architects.pdf",
+    "codeUrl": "https://www.kaggle.com/code/gregkamradt/arc-prize-v8?scriptVersionId=211457842",
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "NVARC_2025",
+    "displayName": "NVARC",
+    "modelReleaseDate": "2025-11-03T00:00:00.000Z",
+    "providerId": "ARC Prize 2025",
+    "modelType": "Custom",
+    "modelGroup": "Kaggle",
+    "paperUrl": "https://drive.google.com/file/d/1vkEluaaJTzaZiJL69TkZovJUkPSDH5Xc/view",
+    "codeUrl": "https://www.kaggle.com/code/gregkamradt/arc2-qwen3-unsloth-flash-lora-batch8-queue-trm2/edit?fromFork=1",
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "Claude 3.7",
+    "displayName": "Claude 3.7",
+    "modelReleaseDate": "2025-02-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:12:56.599396+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "notes": "Claude 3.7 Sonnet was officially announced by Anthropic on February 24, 2025, as their most intelligent model to date and the first hybrid reasoning model on the market. The recorded date matches the official announcement date from Anthropic's news page."
+      }
+    }
+  },
+  {
+    "id": "Claude 3.7 Thinking 16K",
+    "displayName": "Claude 3.7 (16K)",
+    "modelReleaseDate": "2025-02-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "Claude_3_7_thinking",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:13:31.664139+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "notes": "Claude 3.7 Sonnet was officially announced by Anthropic on February 24, 2025. This is Anthropic's most intelligent model to date and the first hybrid reasoning model on the market. The announced date matches the provided date exactly. Note: There is no separate '16K' variant - Claude 3.7 Sonnet supports configurable thinking tokens up to its 128K output token limit."
+      }
+    }
+  },
+  {
+    "id": "Claude 3.7 Thinking 1K",
+    "displayName": "Claude 3.7 (1K)",
+    "modelReleaseDate": "2025-02-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "Claude_3_7_thinking",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:13:31.664139+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "notes": "Claude 3.7 Sonnet was officially announced by Anthropic on February 24, 2025. This is Anthropic's most intelligent model to date and the first hybrid reasoning model on the market. The announced date matches the provided date exactly. Note: There is no separate '16K' variant - Claude 3.7 Sonnet supports configurable thinking tokens up to its 128K output token limit."
+      }
+    }
+  },
+  {
+    "id": "Claude 3.7 Thinking 8K",
+    "displayName": "Claude 3.7 (8K)",
+    "modelReleaseDate": "2025-02-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "Claude_3_7_thinking",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:13:31.664139+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-3-7-sonnet",
+        "notes": "Claude 3.7 Sonnet was officially announced by Anthropic on February 24, 2025. This is Anthropic's most intelligent model to date and the first hybrid reasoning model on the market. The announced date matches the provided date exactly. Note: There is no separate '16K' variant - Claude 3.7 Sonnet supports configurable thinking tokens up to its 128K output token limit."
+      }
+    }
+  },
+  {
+    "id": "Gemini 1.5 Pro",
+    "displayName": "Gemini 1.5 Pro",
+    "modelReleaseDate": "2024-02-15T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:14:18.238326+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+        "notes": "Date corrected from 2025-02-15T00:00:00.000Z to 2024-02-15T00:00:00.000Z. Gemini 1.5 Pro was announced on February 15, 2024. The provided date of 2025-02-15 is incorrect (wrong year). The model was first publicly announced on Feb 15, 2024, with broader API availability starting April 9, 2024.",
+        "previousValue": "2025-02-15T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "Gemini 2.0 Flash",
+    "displayName": "Gemini 2.0 Flash",
+    "modelReleaseDate": "2025-02-05T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://developers.googleblog.com/en/gemini-2-family-expands/",
+        "notes": "Date corrected from 2025-02-02T00:00:00.000Z to 2025-02-05T00:00:00.000Z. Gemini 2.0 Flash was initially released as experimental on December 11, 2024, and became generally available on February 5, 2025. The date provided (2025-02-02) is incorrect; the official GA release was February 5, 2025.",
+        "previousValue": "2025-02-02T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gpt-4-5-2025-02-27",
+    "displayName": "GPT-4.5",
+    "modelReleaseDate": "2025-02-27T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-4-5/",
+        "notes": "GPT-4.5 was officially announced and released by OpenAI on February 27, 2025. Multiple sources including CNBC, Axios, MIT Technology Review, and the official OpenAI announcement page confirm this date. The model was made available to ChatGPT Plus and Pro subscribers."
+      }
+    }
+  },
+  {
+    "id": "gpt-4o-2024-11-20",
+    "displayName": "GPT-4o",
+    "modelReleaseDate": "2024-05-13T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/hello-gpt-4o/",
+        "notes": "Date corrected from 2024-11-20T00:00:00.000Z to 2024-05-13T00:00:00.000Z. GPT-4o was officially announced by OpenAI on May 13, 2024, during their Spring Updates event. Multiple official sources (CNN, TechCrunch, and OpenAI's official announcement) confirm this date. The recorded date of November 20, 2024 is incorrect - that date may correspond to a different model update or feature release, but not the original GPT-4o release.",
+        "previousValue": "2024-11-20T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gpt-4o-mini-2024-07-18",
+    "displayName": "GPT-4o-mini",
+    "modelReleaseDate": "2024-07-18T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+        "notes": "Official OpenAI blog post announcing GPT-4o mini on July 18, 2024. The model was released for developers via API and through ChatGPT web and mobile app on this date."
+      }
+    }
+  },
+  {
+    "id": "Grok 3",
+    "displayName": "Grok 3",
+    "modelReleaseDate": "2025-02-18T04:00:00.000Z",
+    "providerId": "xAI",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2025/02/17/elon-musks-ai-company-xai-releases-its-latest-flagship-ai-grok-3/",
+        "notes": "Date corrected from 2025-02-13T00:00:00.000Z to 2025-02-18T04:00:00.000Z. Grok 3 was released on February 17, 2025, at 8:00 PM PT (February 18, 2025, 4:00 AM UTC). The provided date of February 13 is incorrect by 5 days. Official announcement came from Elon Musk, with live demo event on the announced date.",
+        "previousValue": "2025-02-13T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "Grok 3 Thinking",
+    "displayName": "Grok 3 Thinking",
+    "modelReleaseDate": "2025-02-17T00:00:00.000Z",
+    "providerId": "xAI",
+    "modelType": "CoT",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2025/02/17/elon-musks-ai-company-xai-releases-its-latest-flagship-ai-grok-3/",
+        "notes": "Date corrected from 2025-02-13T00:00:00.000Z to 2025-02-17T00:00:00.000Z. Multiple sources including TechCrunch and xAI's official announcement confirm Grok 3 was released on February 17, 2025. The recorded date of February 13, 2025 is 4 days earlier than the actual release date.",
+        "previousValue": "2025-02-13T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "Icecuber",
+    "displayName": "Icecuber",
+    "modelReleaseDate": "2023-11-03T00:00:00.000Z",
+    "providerId": "ARC Prize 2024",
+    "modelType": "Custom",
+    "modelGroup": "Kaggle",
+    "paperUrl": null,
+    "codeUrl": "https://www.kaggle.com/code/hansuelijud/template-arc2020-1st-place-solution-by-icecuber",
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "Llama 3.3",
+    "displayName": "Llama 3.3",
+    "modelReleaseDate": "2024-12-06T00:00:00.000Z",
+    "providerId": "Meta",
+    "modelType": "Base LLM",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2024/12/06/meta-unveils-a-new-more-efficient-llama-model/",
+        "notes": "Llama 3.3 70B was officially announced by Meta on December 6, 2024. Multiple sources confirm this date, including TechCrunch's coverage published on December 6, 2024, and official Meta announcements. The provided date matches the verified release announcement date."
+      }
+    }
+  },
+  {
+    "id": "mturker",
+    "displayName": "Avg. Mturker",
+    "modelReleaseDate": null,
+    "providerId": "Human",
+    "modelType": null,
+    "modelGroup": "Human",
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "o1 - high",
+    "displayName": "o1 (High)",
+    "modelReleaseDate": "2024-12-05T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/o1-and-new-tools-for-developers/",
+        "notes": "OpenAI released the full o1 model to ChatGPT users on December 5, 2024, as part of their '12 Days of OpenAI' announcement campaign. This date matches the verified release date for the base o1 model, which applies to all variants including o1 (High)."
+      }
+    }
+  },
+  {
+    "id": "o1 - medium",
+    "displayName": "o1 (Medium)",
+    "modelReleaseDate": "2024-12-05T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/o1-and-new-tools-for-developers/",
+        "notes": "OpenAI released the full o1 model to ChatGPT users on December 5, 2024, as part of their '12 Days of OpenAI' announcement campaign. This date matches the verified release date for the base o1 model, which applies to all variants including o1 (High)."
+      }
+    }
+  },
+  {
+    "id": "o1-pro",
+    "displayName": "o1-pro",
+    "modelReleaseDate": "2024-12-05T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1-pro",
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-chatgpt-pro/",
+        "notes": "OpenAI officially announced o1-pro (as part of the o1 pro mode feature in ChatGPT Pro) on December 5, 2024, during their '12 Days of OpenAI' announcement series. The o1-pro model is a version of o1 that uses additional compute resources for enhanced reasoning capabilities, available as part of the $200/month ChatGPT Pro subscription tier."
+      }
+    }
+  },
+  {
+    "id": "o1-preview-2024-09-12",
+    "displayName": "o1-preview",
+    "modelReleaseDate": "2024-09-12T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1-preview",
+    "paperUrl": "https://openai.com/index/introducing-openai-o1-preview/",
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:17:09.819459+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-openai-o1-preview/",
+        "notes": "Official OpenAI blog announcement on September 12, 2024. The o1-preview model was made available to ChatGPT Plus and Team users, as well as through OpenAI's API on this date. Multiple official OpenAI sources and major tech news outlets (TechCrunch) confirm this release date."
+      }
+    }
+  },
+  {
+    "id": "o3-preview-low",
+    "displayName": "o3 (Preview, Low) \u00b9",
+    "modelReleaseDate": "2024-12-20T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-preview",
+    "paperUrl": "https://arcprize.org/blog/oai-o3-pub-breakthrough",
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:57.159530+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2024/12/20/openai-announces-new-o3-model/",
+        "notes": "OpenAI officially announced the o3 model (including the Preview variant with Low, Medium, and High reasoning levels) on December 20, 2024, during their '12 Days of OpenAI' event. The model was announced as a preview with early access applications accepted until January 10, 2025. The recorded release date of 2024-12-20T00:00:00.000Z matches the official announcement date."
+      }
+    }
+  },
+  {
+    "id": "o3-preview-high",
+    "displayName": "o3 (Preview, High)*",
+    "modelReleaseDate": "2024-12-20T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-preview",
+    "paperUrl": "https://arcprize.org/blog/oai-o3-pub-breakthrough",
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:57.159530+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2024/12/20/openai-announces-new-o3-model/",
+        "notes": "OpenAI officially announced the o3 model (including the Preview variant with Low, Medium, and High reasoning levels) on December 20, 2024, during their '12 Days of OpenAI' event. The model was announced as a preview with early access applications accepted until January 10, 2025. The recorded release date of 2024-12-20T00:00:00.000Z matches the official announcement date."
+      }
+    }
+  },
+  {
+    "id": "o3-mini-high",
+    "displayName": "o3-mini (High)",
+    "modelReleaseDate": "2025-01-31T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-mini",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:55.151084+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.technologyreview.com/2025/01/31/1110757/openai-makes-its-reasoning-model-for-free/",
+        "notes": "Official release date confirmed by multiple sources including MIT Technology Review article dated January 31, 2025, and OpenAI's o3-mini System Card dated January 31, 2025. o3-mini was released to ChatGPT Plus, Team, and Pro users on this date, with free user access also becoming available."
+      }
+    }
+  },
+  {
+    "id": "o3-mini-medium",
+    "displayName": "o3-mini (Medium)",
+    "modelReleaseDate": "2025-01-31T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-mini",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:55.151084+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.technologyreview.com/2025/01/31/1110757/openai-makes-its-reasoning-model-for-free/",
+        "notes": "Official release date confirmed by multiple sources including MIT Technology Review article dated January 31, 2025, and OpenAI's o3-mini System Card dated January 31, 2025. o3-mini was released to ChatGPT Plus, Team, and Pro users on this date, with free user access also becoming available."
+      }
+    }
+  },
+  {
+    "id": "o3-mini-low",
+    "displayName": "o3-mini (Low)",
+    "modelReleaseDate": "2025-01-31T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-mini",
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:55.151084+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.technologyreview.com/2025/01/31/1110757/openai-makes-its-reasoning-model-for-free/",
+        "notes": "Official release date confirmed by multiple sources including MIT Technology Review article dated January 31, 2025, and OpenAI's o3-mini System Card dated January 31, 2025. o3-mini was released to ChatGPT Plus, Team, and Pro users on this date, with free user access also becoming available."
+      }
+    }
+  },
+  {
+    "id": "R1",
+    "displayName": "Deepseek R1",
+    "modelReleaseDate": "2025-01-20T00:00:00.000Z",
+    "providerId": "Deepseek",
+    "modelType": "CoT",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:45.893764+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://api-docs.deepseek.com/news/news250120",
+        "notes": "Date corrected from 2025-01-22T00:00:00.000Z to 2025-01-20T00:00:00.000Z. Official Deepseek API documentation confirms Deepseek-R1 was released on January 20, 2025. The provided date (2025-01-22) is 2 days after the actual official release date.",
+        "previousValue": "2025-01-22T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "stem_grad",
+    "displayName": "Stem Grad",
+    "modelReleaseDate": null,
+    "providerId": "Human",
+    "modelType": null,
+    "modelGroup": "Human",
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "gemini-2-5-flash-preview-05-20",
+    "displayName": "Gemini 2.5 Flash (Preview)",
+    "modelReleaseDate": "2025-04-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": null,
+    "paperUrl": "https://deepmind.google/models/gemini/flash/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:59.199476+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Date corrected from 2025-05-20T00:00:00.000Z to 2025-04-17T00:00:00.000Z. Gemini 2.5 Flash Preview was first released on April 17, 2025 with the model string 'gemini-2.5-flash-preview-04-17'. The May 20, 2025 date appears to be when Google announced improvements to the model at Google I/O 2025, not the initial preview release date.",
+        "previousValue": "2025-05-20T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-flash-preview-05-20-thinking-1k",
+    "displayName": "Gemini 2.5 Flash (Preview) (Thinking 1K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-flash-preview-05-20-thinking",
+    "paperUrl": "https://deepmind.google/models/gemini/flash/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:51.545433+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Date corrected from 2025-05-20T00:00:00.000Z to 2025-06-17T00:00:00.000Z. Gemini 2.5 Flash was officially released on June 17, 2025, according to the official Google AI Gemini API changelog, which states 'Released `gemini-2.5-flash`, our first stable 2.5 Flash model.' The provided date of May 20, 2025 is incorrect and predates the actual release by approximately 4 weeks.",
+        "previousValue": "2025-05-20T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-flash-preview-05-20-thinking-8k",
+    "displayName": "Gemini 2.5 Flash (Preview) (Thinking 8K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-flash-preview-05-20-thinking",
+    "paperUrl": "https://deepmind.google/models/gemini/flash/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:51.545433+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Date corrected from 2025-05-20T00:00:00.000Z to 2025-06-17T00:00:00.000Z. Gemini 2.5 Flash was officially released on June 17, 2025, according to the official Google AI Gemini API changelog, which states 'Released `gemini-2.5-flash`, our first stable 2.5 Flash model.' The provided date of May 20, 2025 is incorrect and predates the actual release by approximately 4 weeks.",
+        "previousValue": "2025-05-20T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-flash-preview-05-20-thinking-16k",
+    "displayName": "Gemini 2.5 Flash (Preview) (Thinking 16K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-flash-preview-05-20-thinking",
+    "paperUrl": "https://deepmind.google/models/gemini/flash/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:51.545433+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Date corrected from 2025-05-20T00:00:00.000Z to 2025-06-17T00:00:00.000Z. Gemini 2.5 Flash was officially released on June 17, 2025, according to the official Google AI Gemini API changelog, which states 'Released `gemini-2.5-flash`, our first stable 2.5 Flash model.' The provided date of May 20, 2025 is incorrect and predates the actual release by approximately 4 weeks.",
+        "previousValue": "2025-05-20T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-flash-preview-05-20-thinking-24k",
+    "displayName": "Gemini 2.5 Flash (Preview) (Thinking 24K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-flash-preview-05-20-thinking",
+    "paperUrl": "https://deepmind.google/models/gemini/flash/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:51.545433+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Date corrected from 2025-05-20T00:00:00.000Z to 2025-06-17T00:00:00.000Z. Gemini 2.5 Flash was officially released on June 17, 2025, according to the official Google AI Gemini API changelog, which states 'Released `gemini-2.5-flash`, our first stable 2.5 Flash model.' The provided date of May 20, 2025 is incorrect and predates the actual release by approximately 4 weeks.",
+        "previousValue": "2025-05-20T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-2.5-pro-exp-03-25",
+    "displayName": "Gemini-2.5-Pro-Exp-03-25 **",
+    "modelReleaseDate": "2025-03-25T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": null,
+    "paperUrl": null,
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:08.144828+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+        "notes": "Google officially announced Gemini 2.5 Pro (experimental) on March 25, 2025, on the official Google DeepMind blog. The experimental model identifier 'gemini-2.5-pro-exp-03-25' reflects the March 25 release date. Multiple sources confirm this date including 9to5Google, TechCrunch, and VentureBeat coverage from that date."
+      }
+    }
+  },
+  {
+    "id": "Llama-4-Maverick-17B-128E-Instruct-FP8-together",
+    "displayName": "Llama 4 Maverick",
+    "modelReleaseDate": "2025-04-05T00:00:00.000Z",
+    "providerId": "Meta",
+    "modelType": "Base LLM",
+    "modelGroup": "Llama 4",
+    "paperUrl": "https://www.llama.com/docs/model-cards-and-prompt-formats/llama4_omni/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:11.595267+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "notes": "Official Meta announcement blog post confirms Llama 4 Maverick was announced and made available for download on April 5, 2025. The date provided matches the official announcement date from Meta's official AI blog."
+      }
+    }
+  },
+  {
+    "id": "Llama-4-Scout-17B-16E-Instruct-together",
+    "displayName": "Llama 4 Scout",
+    "modelReleaseDate": "2025-04-05T00:00:00.000Z",
+    "providerId": "Meta",
+    "modelType": "Base LLM",
+    "modelGroup": "Llama 4",
+    "paperUrl": "https://www.llama.com/docs/model-cards-and-prompt-formats/llama4_omni/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:11.595267+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "notes": "Official Meta announcement blog post confirms Llama 4 Maverick was announced and made available for download on April 5, 2025. The date provided matches the official announcement date from Meta's official AI blog."
+      }
+    }
+  },
+  {
+    "id": "gpt-4-1-nano-2025-04-14",
+    "displayName": "GPT-4.1-Nano",
+    "modelReleaseDate": "2025-04-14T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "gpt-4.1",
+    "paperUrl": "https://openai.com/index/gpt-4-1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:18.990468+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-4-1/",
+        "notes": "GPT-4.1-Nano was officially announced and released by OpenAI on April 14, 2025, as part of the GPT-4.1 model family launch alongside GPT-4.1 and GPT-4.1 mini. The official model identifier is gpt-4.1-nano-2025-04-14. Multiple official OpenAI sources and the community announcement confirm this release date."
+      }
+    }
+  },
+  {
+    "id": "gpt-4-1-mini-2025-04-14",
+    "displayName": "GPT-4.1-Mini",
+    "modelReleaseDate": "2025-04-14T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "gpt-4.1",
+    "paperUrl": "https://openai.com/index/gpt-4-1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:18.990468+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-4-1/",
+        "notes": "GPT-4.1-Nano was officially announced and released by OpenAI on April 14, 2025, as part of the GPT-4.1 model family launch alongside GPT-4.1 and GPT-4.1 mini. The official model identifier is gpt-4.1-nano-2025-04-14. Multiple official OpenAI sources and the community announcement confirm this release date."
+      }
+    }
+  },
+  {
+    "id": "gpt-4-1-2025-04-14",
+    "displayName": "GPT-4.1",
+    "modelReleaseDate": "2025-04-14T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "gpt-4.1",
+    "paperUrl": "https://openai.com/index/gpt-4-1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:18.990468+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-4-1/",
+        "notes": "GPT-4.1-Nano was officially announced and released by OpenAI on April 14, 2025, as part of the GPT-4.1 model family launch alongside GPT-4.1 and GPT-4.1 mini. The official model identifier is gpt-4.1-nano-2025-04-14. Multiple official OpenAI sources and the community announcement confirm this release date."
+      }
+    }
+  },
+  {
+    "id": "o1-mini-2024-09-12",
+    "displayName": "o1-mini",
+    "modelReleaseDate": "2024-09-12T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1-mini",
+    "paperUrl": "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:16.452490+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/",
+        "notes": "OpenAI officially announced and released o1-mini on September 12, 2024. This was released simultaneously with the o1-preview model. The model was made available to ChatGPT Plus, Team, Enterprise, and Edu users, as well as to tier 5 API users. Multiple official OpenAI sources confirm this date."
+      }
+    }
+  },
+  {
+    "id": "o1-pro-2025-03-19-low",
+    "displayName": "o1-pro (Low)",
+    "modelReleaseDate": "2025-03-19T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1-pro",
+    "paperUrl": "https://platform.openai.com/docs/models/o1-pro",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:53.650694+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://simonwillison.net/2025/Mar/19/o1-pro/",
+        "notes": "OpenAI released o1-pro on March 19, 2025. The model version designation is o1-pro-2025-03-19. Initial rollout began as an exclusive preview for ChatGPT Enterprise users on March 17, 2025, with broader access to Pro and Team subscribers by March 22, 2025, and API availability following shortly after. The date provided (2025-03-19) correctly matches the official announcement and release date."
+      }
+    }
+  },
+  {
+    "id": "gpt-4-1-2025-04-14",
+    "displayName": "GPT-4.1",
+    "modelReleaseDate": "2025-04-14T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "gpt-4.1",
+    "paperUrl": "https://openai.com/index/gpt-4-1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:18.990468+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-4-1/",
+        "notes": "GPT-4.1-Nano was officially announced and released by OpenAI on April 14, 2025, as part of the GPT-4.1 model family launch alongside GPT-4.1 and GPT-4.1 mini. The official model identifier is gpt-4.1-nano-2025-04-14. Multiple official OpenAI sources and the community announcement confirm this release date."
+      }
+    }
+  },
+  {
+    "id": "gpt-4-1-2025-04-14",
+    "displayName": "GPT-4.1",
+    "modelReleaseDate": "2025-04-14T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "gpt-4.1",
+    "paperUrl": "https://openai.com/index/gpt-4-1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:29:18.990468+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-4-1/",
+        "notes": "GPT-4.1-Nano was officially announced and released by OpenAI on April 14, 2025, as part of the GPT-4.1 model family launch alongside GPT-4.1 and GPT-4.1 mini. The official model identifier is gpt-4.1-nano-2025-04-14. Multiple official OpenAI sources and the community announcement confirm this release date."
+      }
+    }
+  },
+  {
+    "id": "o1-2024-12-17-low",
+    "displayName": "o1 (Low)",
+    "modelReleaseDate": "2024-12-05T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1",
+    "paperUrl": "https://openai.com/o1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:42.881176+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/o1-and-new-tools-for-developers/",
+        "notes": "Date corrected from 2024-12-17T00:00:00.000Z to 2024-12-05T00:00:00.000Z. The o1 model was first publicly released on December 5, 2024, when it became available in ChatGPT with the new ChatGPT Pro subscription. December 17, 2024 was when the API version was released to developers with additional capabilities (function calling, vision, structured outputs). The recorded date of 2024-12-17 appears to be the API release date, not the initial public release date.",
+        "previousValue": "2024-12-17T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "o1-2024-12-17-medium",
+    "displayName": "o1 (Medium)",
+    "modelReleaseDate": "2024-12-05T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1",
+    "paperUrl": "https://openai.com/o1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:42.881176+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/o1-and-new-tools-for-developers/",
+        "notes": "Date corrected from 2024-12-17T00:00:00.000Z to 2024-12-05T00:00:00.000Z. The o1 model was first publicly released on December 5, 2024, when it became available in ChatGPT with the new ChatGPT Pro subscription. December 17, 2024 was when the API version was released to developers with additional capabilities (function calling, vision, structured outputs). The recorded date of 2024-12-17 appears to be the API release date, not the initial public release date.",
+        "previousValue": "2024-12-17T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "o1-2024-12-17-high",
+    "displayName": "o1 (High)",
+    "modelReleaseDate": "2024-12-05T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o1",
+    "paperUrl": "https://openai.com/o1/",
+    "codeUrl": "https://github.com/arcprize/model_baseline",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:42.881176+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/o1-and-new-tools-for-developers/",
+        "notes": "Date corrected from 2024-12-17T00:00:00.000Z to 2024-12-05T00:00:00.000Z. The o1 model was first publicly released on December 5, 2024, when it became available in ChatGPT with the new ChatGPT Pro subscription. December 17, 2024 was when the API version was released to developers with additional capabilities (function calling, vision, structured outputs). The recorded date of 2024-12-17 appears to be the API release date, not the initial public release date.",
+        "previousValue": "2024-12-17T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "o3-mini-2025-01-31-low",
+    "displayName": "o3-mini (Low)",
+    "modelReleaseDate": "2025-01-31T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "o3-mini",
+    "paperUrl": "https://openai.com/index/openai-o3-mini/",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:55.151084+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.technologyreview.com/2025/01/31/1110757/openai-makes-its-reasoning-model-for-free/",
+        "notes": "Official release date confirmed by multiple sources including MIT Technology Review article dated January 31, 2025, and OpenAI's o3-mini System Card dated January 31, 2025. o3-mini was released to ChatGPT Plus, Team, and Pro users on this date, with free user access also becoming available."
+      }
+    }
+  },
+  {
+    "id": "o3-2025-04-16-high",
+    "displayName": "o3 (High)",
+    "modelReleaseDate": "2025-04-16T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:48.592448+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "OpenAI officially released o3 and o4-mini on April 16, 2025. The date has been verified through multiple official sources including OpenAI's blog, the OpenAI Community announcement, and major tech news outlets (Axios, VentureBeat). The o3 (High) is a variant of the base o3 model, and all variants share the same release date."
+      }
+    }
+  },
+  {
+    "id": "o3-2025-04-16-low",
+    "displayName": "o3 (Low)",
+    "modelReleaseDate": "2025-04-16T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:48.592448+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "OpenAI officially released o3 and o4-mini on April 16, 2025. The date has been verified through multiple official sources including OpenAI's blog, the OpenAI Community announcement, and major tech news outlets (Axios, VentureBeat). The o3 (High) is a variant of the base o3 model, and all variants share the same release date."
+      }
+    }
+  },
+  {
+    "id": "o3-2025-04-16-medium",
+    "displayName": "o3 (Medium)",
+    "modelReleaseDate": "2025-04-16T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:48.592448+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "OpenAI officially released o3 and o4-mini on April 16, 2025. The date has been verified through multiple official sources including OpenAI's blog, the OpenAI Community announcement, and major tech news outlets (Axios, VentureBeat). The o3 (High) is a variant of the base o3 model, and all variants share the same release date."
+      }
+    }
+  },
+  {
+    "id": "o3-mini-2025-01-31-high",
+    "displayName": "o3-mini (High)",
+    "modelReleaseDate": "2025-01-31T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-mini",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:55.151084+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.technologyreview.com/2025/01/31/1110757/openai-makes-its-reasoning-model-for-free/",
+        "notes": "Official release date confirmed by multiple sources including MIT Technology Review article dated January 31, 2025, and OpenAI's o3-mini System Card dated January 31, 2025. o3-mini was released to ChatGPT Plus, Team, and Pro users on this date, with free user access also becoming available."
+      }
+    }
+  },
+  {
+    "id": "o3-mini-2025-01-31-low",
+    "displayName": "o3-mini (Low)",
+    "modelReleaseDate": "2025-01-31T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-mini",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:55.151084+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.technologyreview.com/2025/01/31/1110757/openai-makes-its-reasoning-model-for-free/",
+        "notes": "Official release date confirmed by multiple sources including MIT Technology Review article dated January 31, 2025, and OpenAI's o3-mini System Card dated January 31, 2025. o3-mini was released to ChatGPT Plus, Team, and Pro users on this date, with free user access also becoming available."
+      }
+    }
+  },
+  {
+    "id": "o3-mini-2025-01-31-medium",
+    "displayName": "o3-mini (Medium)",
+    "modelReleaseDate": "2025-01-31T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-mini",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:28:55.151084+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.technologyreview.com/2025/01/31/1110757/openai-makes-its-reasoning-model-for-free/",
+        "notes": "Official release date confirmed by multiple sources including MIT Technology Review article dated January 31, 2025, and OpenAI's o3-mini System Card dated January 31, 2025. o3-mini was released to ChatGPT Plus, Team, and Pro users on this date, with free user access also becoming available."
+      }
+    }
+  },
+  {
+    "id": "o4-mini-2025-04-16-high",
+    "displayName": "o4-mini (High)",
+    "modelReleaseDate": "2025-04-16T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o4-mini",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:44.082661+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "o4-mini was officially announced and released by OpenAI on April 16, 2025. The model was made available to all ChatGPT users (including free-tier) as well as via the Chat Completions API and Responses API. The o4-mini-high variant was made available exclusively to paid-tier ChatGPT users. The date provided (2025-04-16T00:00:00.000Z) is correct."
+      }
+    }
+  },
+  {
+    "id": "o4-mini-2025-04-16-low",
+    "displayName": "o4-mini (Low)",
+    "modelReleaseDate": "2025-04-16T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o4-mini",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:44.082661+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "o4-mini was officially announced and released by OpenAI on April 16, 2025. The model was made available to all ChatGPT users (including free-tier) as well as via the Chat Completions API and Responses API. The o4-mini-high variant was made available exclusively to paid-tier ChatGPT users. The date provided (2025-04-16T00:00:00.000Z) is correct."
+      }
+    }
+  },
+  {
+    "id": "o4-mini-2025-04-16-medium",
+    "displayName": "o4-mini (Medium)",
+    "modelReleaseDate": "2025-04-16T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o4-mini",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:31:44.082661+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "o4-mini was officially announced and released by OpenAI on April 16, 2025. The model was made available to all ChatGPT users (including free-tier) as well as via the Chat Completions API and Responses API. The o4-mini-high variant was made available exclusively to paid-tier ChatGPT users. The date provided (2025-04-16T00:00:00.000Z) is correct."
+      }
+    }
+  },
+  {
+    "id": "codex-mini-latest",
+    "displayName": "Codex Mini (Latest)",
+    "modelReleaseDate": "2025-04-16T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://platform.openai.com/docs/models/codex-mini-latest",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:38:21.003216+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-the-codex-app/",
+        "notes": "Date corrected from 2025-05-23T00:00:00.000Z to 2025-04-16T00:00:00.000Z. Official OpenAI announcement on April 16, 2025, introduced codex-mini-latest as a fine-tuned version of o4-mini specifically designed for use in Codex CLI. The model was announced and made available via API on April 16, 2025, not on May 23, 2025 as recorded.",
+        "previousValue": "2025-05-23T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-20250514",
+    "displayName": "Claude Sonnet 4",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:06.519950+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-4",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. Claude Sonnet 4 was officially announced by Anthropic on May 22, 2025. The announcement stated 'Today, we're introducing the next generation of Claude models: Claude Opus 4 and Claude Sonnet 4, setting new standards for coding, advanced reasoning, and AI agents.' The provided date of May 14, 2025 is incorrect; the actual release date is May 22, 2025.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-20250514-thinking-1k",
+    "displayName": "Claude Sonnet 4 (Thinking 1K)",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-20250514-thinking",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:26.130788+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. The official Anthropic API release notes confirm that Claude Sonnet 4 was released on May 22, 2025, not May 14, 2025. The date given (2025-05-14) does not match the official announcement date.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-20250514-thinking-8k-bedrock",
+    "displayName": "Claude Sonnet 4 (Thinking 8K)",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-20250514-thinking",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:26.130788+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. The official Anthropic API release notes confirm that Claude Sonnet 4 was released on May 22, 2025, not May 14, 2025. The date given (2025-05-14) does not match the official announcement date.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-20250514-thinking-16k-bedrock",
+    "displayName": "Claude Sonnet 4 (Thinking 16K)",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-20250514-thinking",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:26.130788+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://platform.claude.com/docs/en/release-notes/overview",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. The official Anthropic API release notes confirm that Claude Sonnet 4 was released on May 22, 2025, not May 14, 2025. The date given (2025-05-14) does not match the official announcement date.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-20250514",
+    "displayName": "Claude Opus 4",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:11.663012+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-4",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. Official Anthropic blog post confirms Claude Opus 4 was announced on May 22, 2025. The date provided (2025-05-14) is incorrect by 8 days. The official release announcement was on May 22, 2025.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-20250514-thinking-1k",
+    "displayName": "Claude Opus 4 (Thinking 1K)",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-opus-4-20250514-thinking",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:18.493298+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-4",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. Claude Opus 4 was officially announced on May 22, 2025, according to the official Anthropic news page. The provided date of 2025-05-14 is incorrect - it is 8 days earlier than the actual announcement date.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-20250514-thinking-8k",
+    "displayName": "Claude Opus 4 (Thinking 8K)",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-opus-4-20250514-thinking",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:18.493298+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-4",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. Claude Opus 4 was officially announced on May 22, 2025, according to the official Anthropic news page. The provided date of 2025-05-14 is incorrect - it is 8 days earlier than the actual announcement date.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-20250514-thinking-16k",
+    "displayName": "Claude Opus 4 (Thinking 16K)",
+    "modelReleaseDate": "2025-05-22T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-opus-4-20250514-thinking",
+    "paperUrl": "https://www.anthropic.com/news/claude-4",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:18.493298+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-4",
+        "notes": "Date corrected from 2025-05-14T00:00:00.000Z to 2025-05-22T00:00:00.000Z. Claude Opus 4 was officially announced on May 22, 2025, according to the official Anthropic news page. The provided date of 2025-05-14 is incorrect - it is 8 days earlier than the actual announcement date.",
+        "previousValue": "2025-05-14T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "deepseek_r1_0528-openrouter",
+    "displayName": "Deepseek R1 (05/28)",
+    "modelReleaseDate": "2025-05-28T00:00:00.000Z",
+    "providerId": "Deepseek",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://api-docs.deepseek.com/news/news250528",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:31.839048+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.bloomberg.com/news/articles/2025-05-28/deepseek-unveils-update-to-r1-model-as-ai-race-heats-up",
+        "notes": "DeepSeek-R1-0528 is an upgraded version of the original DeepSeek-R1 released on May 28, 2025. Multiple official sources (Bloomberg, TechCrunch, CNBC) confirm this date. The update improved accuracy from 70% to 87.5% and added JSON output and function calling support."
+      }
+    }
+  },
+  {
+    "id": "grok-4-0709",
+    "displayName": "Grok 4 (Thinking)",
+    "modelReleaseDate": "2025-07-10T05:28:00.000Z",
+    "providerId": "xAI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://x.ai/news",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:36.378500+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2025/07/09/elon-musks-xai-launches-grok-4-alongside-a-300-monthly-subscription/",
+        "notes": "Date corrected from 2025-07-09T00:00:00.000Z to 2025-07-10T05:28:00.000Z. Grok 4 was officially announced and released on July 9, 2025 at approximately 10:28 PM PDT (2025-07-10T05:28:00.000Z UTC). The currently recorded date of 2025-07-09T00:00:00.000Z is incorrect - it's off by approximately 5.5 hours. The announcement came through xAI and Elon Musk via livestream and social media on X (formerly Twitter).",
+        "previousValue": "2025-07-09T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "grok-4-fast-reasoning",
+    "displayName": "Grok 4 (Fast Reasoning)",
+    "modelReleaseDate": "2025-07-09T20:00:00.000Z",
+    "providerId": "xAI",
+    "modelType": "CoT",
+    "modelGroup": "grok-4-0709",
+    "paperUrl": "https://x.ai/news/grok-4-fast",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": true,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:46.007655+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.business-standard.com/technology/tech-news/elon-musk-confirms-xai-s-grok-4-launch-for-july-9-where-watch-features-125070800297_1.html",
+        "notes": "Date corrected from 2025-10-21T00:00:00.000Z to 2025-07-09T20:00:00.000Z. Grok 4 was officially announced and released on July 9, 2025 at 8 PM PT during an xAI livestream event confirmed by Elon Musk. The provided date of October 21, 2025 is incorrect. Grok 4 was released in July 2025, not October 2025.",
+        "previousValue": "2025-10-21T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "grok-3-openrouter",
+    "displayName": "Grok 3",
+    "modelReleaseDate": "2025-02-17T04:00:00.000Z",
+    "providerId": "xAI",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "https://x.ai/api#capabilities",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:02.715596+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2025/02/17/elon-musks-ai-company-xai-releases-its-latest-flagship-ai-grok-3/",
+        "notes": "Date corrected from 2025-02-19T00:00:00.000Z to 2025-02-17T04:00:00.000Z. Grok 3 was officially released by xAI on February 17, 2025 at 8:00 PM PST (February 18, 2025 at 4:00 AM UTC). The provided date of 2025-02-19T00:00:00.000Z is incorrect\u2014it is two days later than the actual release date. Multiple sources including TechCrunch, CNBC, and Bloomberg confirm the February 17, 2025 release.",
+        "previousValue": "2025-02-19T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "grok-3-mini-beta-low-openrouter",
+    "displayName": "Grok 3 Mini (Low)",
+    "modelReleaseDate": "2025-02-17T00:00:00.000Z",
+    "providerId": "xAI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://x.ai/api#capabilities",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:32:50.806520+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2025/02/17/elon-musks-ai-company-xai-releases-its-latest-flagship-ai-grok-3/",
+        "notes": "Date corrected from 2025-02-19T00:00:00.000Z to 2025-02-17T00:00:00.000Z. Grok 3 and Grok 3 Mini were officially released by xAI on February 17, 2025, as reported by TechCrunch. The recorded date of February 19, 2025 is incorrect by 2 days. The release occurred late on Monday, February 17, 2025.",
+        "previousValue": "2025-02-19T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-pro-preview-openrouter",
+    "displayName": "Gemini 2.5 Pro (Preview)",
+    "modelReleaseDate": "2025-03-25T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:00.667893+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Date corrected from 2025-02-19T00:00:00.000Z to 2025-03-25T00:00:00.000Z. Gemini 2.5 Pro was first announced and released as an experimental version on March 25, 2025. The public preview with billing support became available on April 4, 2025. The recorded date of 2025-02-19 is incorrect - it predates the actual announcement by over a month.",
+        "previousValue": "2025-02-19T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-pro-preview-05-06-thinking-1k",
+    "displayName": "Gemini 2.5 Pro (Preview, Thinking 1K)",
+    "modelReleaseDate": "2025-03-25T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:24.604549+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+        "notes": "Date corrected from 2025-02-19T00:00:00.000Z to 2025-03-25T00:00:00.000Z. Gemini 2.5 Pro was first announced and released on March 25, 2025 as 'Gemini 2.5 Pro Experimental' (gemini-2.5-pro-exp-03-25), featuring thinking mode capabilities. The recorded date of February 19, 2025 does not match any official Gemini 2.5 Pro announcement. In February 2025, Google released Gemini 2.0 models (2.0 Flash on Jan 30, 2.0 Pro on Feb 5), but Gemini 2.5 Pro was not announced until March 25, 2025.",
+        "previousValue": "2025-02-19T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "o3-pro-2025-06-10-high",
+    "displayName": "o3-Pro (High)",
+    "modelReleaseDate": "2025-06-10T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-pro",
+    "paperUrl": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:15.258085+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "o3-Pro was released by OpenAI on June 10, 2025, becoming available to ChatGPT Pro and Team users, with Enterprise and Edu users gaining access the following week. Multiple authoritative sources including TechCrunch and OpenAI developer community confirm this date."
+      }
+    }
+  },
+  {
+    "id": "o3-pro-2025-06-10-medium",
+    "displayName": "o3-Pro (Medium)",
+    "modelReleaseDate": "2025-06-10T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-pro",
+    "paperUrl": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:15.258085+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "o3-Pro was released by OpenAI on June 10, 2025, becoming available to ChatGPT Pro and Team users, with Enterprise and Edu users gaining access the following week. Multiple authoritative sources including TechCrunch and OpenAI developer community confirm this date."
+      }
+    }
+  },
+  {
+    "id": "o3-pro-2025-06-10-low",
+    "displayName": "o3-Pro (Low)",
+    "modelReleaseDate": "2025-06-10T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "o3-pro",
+    "paperUrl": "https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:15.258085+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-o3-and-o4-mini/",
+        "notes": "o3-Pro was released by OpenAI on June 10, 2025, becoming available to ChatGPT Pro and Team users, with Enterprise and Edu users gaining access the following week. Multiple authoritative sources including TechCrunch and OpenAI developer community confirm this date."
+      }
+    }
+  },
+  {
+    "id": "magistral-small-2506",
+    "displayName": "Magistral Small",
+    "modelReleaseDate": "2025-06-10T00:00:00.000Z",
+    "providerId": "Mistral",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "https://mistral.ai/news/magistral",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:32.973803+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://mistral.ai/news/magistral",
+        "notes": "Magistral Small was officially announced by Mistral AI on June 10, 2025. This is the base model's initial release date. While Magistral Small 1.2 was released later in September 2025, the original Magistral Small (version 2506) was released on the recorded date."
+      }
+    }
+  },
+  {
+    "id": "magistral-medium-2506",
+    "displayName": "Magistral Medium",
+    "modelReleaseDate": "2025-06-10T00:00:00.000Z",
+    "providerId": "Mistral",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "https://mistral.ai/news/magistral",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:24.834879+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://mistral.ai/news/magistral",
+        "notes": "Magistral Medium was officially announced by Mistral AI on June 10, 2025. The official blog post confirms this date. The model was released as a preview version in Le Chat and via API on La Plateforme."
+      }
+    }
+  },
+  {
+    "id": "magistral-medium-2506-thinking",
+    "displayName": "Magistral Medium (Thinking)",
+    "modelReleaseDate": "2025-06-10T00:00:00.000Z",
+    "providerId": "Mistral",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://mistral.ai/news/magistral",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:39.863578+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://mistral.ai/news/magistral",
+        "notes": "Magistral Medium was officially announced by Mistral AI on June 10, 2025. Multiple sources including the official Mistral blog post, TechCrunch, and other tech news outlets confirm this release date. The model was announced as Mistral's first reasoning-focused language model, with Magistral Medium being the enterprise version and Magistral Small being the open-source variant."
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-pro-2025-06-17-thinking-1k",
+    "displayName": "Gemini 2.5 Pro (Thinking 1K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-pro-2025-06-17-thinking",
+    "paperUrl": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-flash-lite-flash-pro-ga-vertex-ai",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:54.482624+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Gemini 2.5 Pro reached general availability (GA) on June 17, 2025. The model was initially previewed on March 25, 2025, and updated at Google I/O 2025 on May 20, 2025, but the official stable release date was June 17, 2025."
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-pro-2025-06-17-thinking-8k",
+    "displayName": "Gemini 2.5 Pro (Thinking 8K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-pro-2025-06-17-thinking",
+    "paperUrl": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-flash-lite-flash-pro-ga-vertex-ai",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:54.482624+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Gemini 2.5 Pro reached general availability (GA) on June 17, 2025. The model was initially previewed on March 25, 2025, and updated at Google I/O 2025 on May 20, 2025, but the official stable release date was June 17, 2025."
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-pro-2025-06-17-thinking-16k",
+    "displayName": "Gemini 2.5 Pro (Thinking 16K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-pro-2025-06-17-thinking",
+    "paperUrl": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-flash-lite-flash-pro-ga-vertex-ai",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:54.482624+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Gemini 2.5 Pro reached general availability (GA) on June 17, 2025. The model was initially previewed on March 25, 2025, and updated at Google I/O 2025 on May 20, 2025, but the official stable release date was June 17, 2025."
+      }
+    }
+  },
+  {
+    "id": "gemini-2-5-pro-2025-06-17-thinking-32k",
+    "displayName": "Gemini 2.5 Pro (Thinking 32K)",
+    "modelReleaseDate": "2025-06-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-2-5-pro-2025-06-17-thinking",
+    "paperUrl": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-2-5-flash-lite-flash-pro-ga-vertex-ai",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:33:54.482624+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://ai.google.dev/gemini-api/docs/changelog",
+        "notes": "Gemini 2.5 Pro reached general availability (GA) on June 17, 2025. The model was initially previewed on March 25, 2025, and updated at Google I/O 2025 on May 20, 2025, but the official stable release date was June 17, 2025."
+      }
+    }
+  },
+  {
+    "id": "qwen3-235b-a22b-instruct-2507",
+    "displayName": "Qwen3-235b-a22b Instruct (25/07)",
+    "modelReleaseDate": "2025-07-21T00:00:00.000Z",
+    "providerId": "Alibaba",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Instruct-2507",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v2_public_eval/tree/main/qwen3-235b-a22b-instruct-2507",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:04.059825+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.actuia.com/en/news/alibaba-launches-qwen3-235b-a22b-instruct-2507-and-breaks-away-from-hybrid-reasoning/",
+        "notes": "Date corrected from 2025-07-25T00:00:00.000Z to 2025-07-21T00:00:00.000Z. The Qwen3-235B-A22B-Instruct-2507 model was announced on July 21, 2025, according to multiple sources including official Alibaba X/Twitter announcement. The July 25, 2025 date appears to correspond to the Thinking variant release instead. The provided date of 2025-07-25 is incorrect for the Instruct model.",
+        "previousValue": "2025-07-25T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2025-08-07-minimal",
+    "displayName": "GPT-5 (Minimal)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:01.811708+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://community.openai.com/t/release-of-gpt-5-openai-live5tream-7th-august-2025/1335837",
+        "notes": "GPT-5 was officially announced and released by OpenAI on August 7, 2025 at 10:00 AM PT (17:00 UTC). The recorded date of 2025-08-07 is correct, though the precise time was 10 AM PT. Multiple official OpenAI sources and community forums confirm this launch date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2025-08-07-low",
+    "displayName": "GPT-5 (Low)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:09.029641+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.cnbc.com/2025/08/07/openai-launches-gpt-5-model-for-all-chatgpt-users.html",
+        "notes": "Multiple sources confirm GPT-5 was officially launched by OpenAI on August 7, 2025 at 10am PT. The provided date matches the official release date. GPT-5 (Low) is a variant of the base GPT-5 model and shares the same release date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2025-08-07-medium",
+    "displayName": "GPT-5 (Medium)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:09.029641+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.cnbc.com/2025/08/07/openai-launches-gpt-5-model-for-all-chatgpt-users.html",
+        "notes": "Multiple sources confirm GPT-5 was officially launched by OpenAI on August 7, 2025 at 10am PT. The provided date matches the official release date. GPT-5 (Low) is a variant of the base GPT-5 model and shares the same release date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2025-08-07-high",
+    "displayName": "GPT-5 (High)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:09.029641+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.cnbc.com/2025/08/07/openai-launches-gpt-5-model-for-all-chatgpt-users.html",
+        "notes": "Multiple sources confirm GPT-5 was officially launched by OpenAI on August 7, 2025 at 10am PT. The provided date matches the official release date. GPT-5 (Low) is a variant of the base GPT-5 model and shares the same release date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-1-2025-11-13-thinking-none",
+    "displayName": "GPT-5.1 (Thinking, None)",
+    "modelReleaseDate": "2025-11-12T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "gpt-5-1-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:18.212880+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-5-1/",
+        "notes": "Date corrected from 2025-11-13T00:00:00.000Z to 2025-11-12T00:00:00.000Z. OpenAI announced GPT-5.1 on November 12, 2025, with GPT-5.1 Instant and Thinking beginning to roll out that day. The recorded date of November 13, 2025 is one day off from the official announcement and release date.",
+        "previousValue": "2025-11-13T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gpt-5-1-2025-11-13-thinking-low",
+    "displayName": "GPT-5.1 (Thinking, Low)",
+    "modelReleaseDate": "2025-11-12T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-1-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:18.212880+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-5-1/",
+        "notes": "Date corrected from 2025-11-13T00:00:00.000Z to 2025-11-12T00:00:00.000Z. OpenAI announced GPT-5.1 on November 12, 2025, with GPT-5.1 Instant and Thinking beginning to roll out that day. The recorded date of November 13, 2025 is one day off from the official announcement and release date.",
+        "previousValue": "2025-11-13T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gpt-5-1-2025-11-13-thinking-medium",
+    "displayName": "GPT-5.1 (Thinking, Medium)",
+    "modelReleaseDate": "2025-11-12T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-1-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:18.212880+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-5-1/",
+        "notes": "Date corrected from 2025-11-13T00:00:00.000Z to 2025-11-12T00:00:00.000Z. OpenAI announced GPT-5.1 on November 12, 2025, with GPT-5.1 Instant and Thinking beginning to roll out that day. The recorded date of November 13, 2025 is one day off from the official announcement and release date.",
+        "previousValue": "2025-11-13T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gpt-5-1-2025-11-13-thinking-high",
+    "displayName": "GPT-5.1 (Thinking, High)",
+    "modelReleaseDate": "2025-11-12T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-1-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:18.212880+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/gpt-5-1/",
+        "notes": "Date corrected from 2025-11-13T00:00:00.000Z to 2025-11-12T00:00:00.000Z. OpenAI announced GPT-5.1 on November 12, 2025, with GPT-5.1 Instant and Thinking beginning to roll out that day. The recorded date of November 13, 2025 is one day off from the official announcement and release date.",
+        "previousValue": "2025-11-13T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gpt-5-mini-2025-08-07-high",
+    "displayName": "GPT-5 Mini (High)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-mini-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:39.986347+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5/",
+        "notes": "GPT-5 Mini was released on August 7, 2025 at 10am PT as part of OpenAI's GPT-5 announcement. It was rolled out across ChatGPT, the API, and GitHub Models Playground on this date. The date provided (2025-08-07T00:00:00.000Z) is correct in terms of the date, though the exact time was 10am PT."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-mini-2025-08-07-medium",
+    "displayName": "GPT-5 Mini (Medium)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-mini-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:39.986347+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5/",
+        "notes": "GPT-5 Mini was released on August 7, 2025 at 10am PT as part of OpenAI's GPT-5 announcement. It was rolled out across ChatGPT, the API, and GitHub Models Playground on this date. The date provided (2025-08-07T00:00:00.000Z) is correct in terms of the date, though the exact time was 10am PT."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-mini-2025-08-07-low",
+    "displayName": "GPT-5 Mini (Low)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-mini-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:39.986347+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5/",
+        "notes": "GPT-5 Mini was released on August 7, 2025 at 10am PT as part of OpenAI's GPT-5 announcement. It was rolled out across ChatGPT, the API, and GitHub Models Playground on this date. The date provided (2025-08-07T00:00:00.000Z) is correct in terms of the date, though the exact time was 10am PT."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-mini-2025-08-07-minimal",
+    "displayName": "GPT-5 Mini (Minimal)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:38.533530+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2025/08/07/openais-gpt-5-is-here/",
+        "notes": "GPT-5 Mini was released as part of OpenAI's GPT-5 launch on August 7, 2025, at 10am PT. Multiple official sources confirm this date, including OpenAI community announcements and major tech news outlets."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-nano-2025-08-07-high",
+    "displayName": "GPT-5 Nano (High)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-nano-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:26.033277+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+        "notes": "GPT-5 Nano was officially released by OpenAI on August 7, 2025, as part of the GPT-5 launch announcement. The model was released in three variants (gpt-5, gpt-5-mini, and gpt-5-nano) on the same date. This date is confirmed across multiple official sources including the OpenAI developer blog, API documentation, and community announcements."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-nano-2025-08-07-medium",
+    "displayName": "GPT-5 Nano (Medium)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-nano-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:26.033277+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+        "notes": "GPT-5 Nano was officially released by OpenAI on August 7, 2025, as part of the GPT-5 launch announcement. The model was released in three variants (gpt-5, gpt-5-mini, and gpt-5-nano) on the same date. This date is confirmed across multiple official sources including the OpenAI developer blog, API documentation, and community announcements."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-nano-2025-08-07-low",
+    "displayName": "GPT-5 Nano (Low)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-nano-reasoning",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:26.033277+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-for-developers/",
+        "notes": "GPT-5 Nano was officially released by OpenAI on August 7, 2025, as part of the GPT-5 launch announcement. The model was released in three variants (gpt-5, gpt-5-mini, and gpt-5-nano) on the same date. This date is confirmed across multiple official sources including the OpenAI developer blog, API documentation, and community announcements."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-nano-2025-08-07-minimal",
+    "displayName": "GPT-5 Nano (Minimal)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:45.438248+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.cnbc.com/2025/08/07/openai-launches-gpt-5-model-for-all-chatgpt-users.html",
+        "notes": "GPT-5 Nano was released by OpenAI on August 7, 2025, as part of the GPT-5 model family launch. This date is confirmed across multiple sources including official OpenAI announcements, TechCrunch, CNBC, and OpenAI's developer community. The date matches the provided verification date exactly."
+      }
+    }
+  },
+  {
+    "id": "hrm-2-2508",
+    "displayName": "Hierarchical Reasoning Model (HRM)",
+    "modelReleaseDate": "2025-07-21T00:00:00.000Z",
+    "providerId": "bespoke",
+    "modelType": "",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:34:57.143808+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.tradingview.com/news/reuters.com,2025-07-21:newsml_ACN101155a:0-sapient-intelligence-open-sources-hierarchical-reasoning-model-a-brain-inspired-architecture-that-solves-complex-reasoning-tasks-with-27-million-parameters/",
+        "notes": "Date corrected from 2025-08-07T00:00:00.000Z to 2025-07-21T00:00:00.000Z. The Hierarchical Reasoning Model (HRM) paper was published on June 8, 2025, but the official open-source release and public announcement by Sapient Intelligence was on July 21, 2025. The provided date of August 7, 2025 is incorrect.",
+        "previousValue": "2025-08-07T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "johan_land_gpt_5_2_refine",
+    "displayName": "GPT-5.2 (Refine.)",
+    "modelReleaseDate": "2026-02-03T00:00:00.000Z",
+    "providerId": "johan_land",
+    "modelType": "Refinement",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "https://www.kaggle.com/code/johanland/johan-land-solver-v7-public",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "poetiq-arc-agi-gemini-3-d_v1",
+    "displayName": "Gemini 3 Pro (Refine.)",
+    "modelReleaseDate": "2025-12-04T00:00:00.000Z",
+    "providerId": "poetiq",
+    "modelType": "Refinement",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "jeremy_sept_2025",
+    "displayName": "Grok 4 (Refine.)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "j_berman",
+    "modelType": "Refinement",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "https://github.com/jerber/arc-lang-public",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "eric_pang_sept_2025",
+    "displayName": "Grok 4 (Refine.)",
+    "modelReleaseDate": "2025-08-07T00:00:00.000Z",
+    "providerId": "e_pang",
+    "modelType": "Refinement",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "https://github.com/epang080516/arc_agi",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929",
+    "displayName": "Claude Sonnet 4.5",
+    "modelReleaseDate": "2025-09-29T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "Base LLM",
+    "modelGroup": "claude-sonnet-4-5-20250929",
+    "paperUrl": "https://www.anthropic.com/claude/sonnet",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-sonnet-4-5-20250929",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:08.044829+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "notes": "Official Anthropic announcement confirms Claude Sonnet 4.5 was released on September 29, 2025. The model was announced as 'available everywhere today' with the announcement published on the official Anthropic news page."
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929-thinking-1k",
+    "displayName": "Claude Sonnet 4.5 (Thinking 1K)",
+    "modelReleaseDate": "2025-09-29T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-5-20250929",
+    "paperUrl": "https://www.anthropic.com/claude/sonnet",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-sonnet-4-5-20250929",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:08.044829+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "notes": "Official Anthropic announcement confirms Claude Sonnet 4.5 was released on September 29, 2025. The model was announced as 'available everywhere today' with the announcement published on the official Anthropic news page."
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929-thinking-8k",
+    "displayName": "Claude Sonnet 4.5 (Thinking 8K)",
+    "modelReleaseDate": "2025-09-29T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-5-20250929",
+    "paperUrl": "https://www.anthropic.com/claude/sonnet",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-sonnet-4-5-20250929",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:08.044829+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "notes": "Official Anthropic announcement confirms Claude Sonnet 4.5 was released on September 29, 2025. The model was announced as 'available everywhere today' with the announcement published on the official Anthropic news page."
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929-thinking-16k",
+    "displayName": "Claude Sonnet 4.5 (Thinking 16K)",
+    "modelReleaseDate": "2025-09-29T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-5-20250929",
+    "paperUrl": "https://www.anthropic.com/claude/sonnet",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-sonnet-4-5-20250929",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:08.044829+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "notes": "Official Anthropic announcement confirms Claude Sonnet 4.5 was released on September 29, 2025. The model was announced as 'available everywhere today' with the announcement published on the official Anthropic news page."
+      }
+    }
+  },
+  {
+    "id": "claude-sonnet-4-5-20250929-thinking-32k",
+    "displayName": "Claude Sonnet 4.5 (Thinking 32K)",
+    "modelReleaseDate": "2025-09-29T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-5-20250929",
+    "paperUrl": "https://www.anthropic.com/claude/sonnet",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-sonnet-4-5-20250929",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:08.044829+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-5",
+        "notes": "Official Anthropic announcement confirms Claude Sonnet 4.5 was released on September 29, 2025. The model was announced as 'available everywhere today' with the announcement published on the official Anthropic news page."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-pro-2025-10-06",
+    "displayName": "GPT-5 Pro",
+    "modelReleaseDate": "2025-10-06T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://platform.openai.com/docs/models/gpt-5-pro",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:06.372361+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.infoq.com/news/2025/10/openai-dev-day/",
+        "notes": "GPT-5 Pro was officially announced and released by OpenAI on October 6, 2025, during OpenAI's DevDay 2025 event. The model was introduced as an API offering alongside AgentKit and Sora 2. This is distinct from the base GPT-5 model which was released on August 7, 2025."
+      }
+    }
+  },
+  {
+    "id": "trm-2025-10-07",
+    "displayName": "Tiny Recursion Model (TRM)",
+    "modelReleaseDate": "2025-10-07T00:00:00.000Z",
+    "providerId": "bespoke",
+    "modelType": "",
+    "modelGroup": "",
+    "paperUrl": "https://alexiajm.github.io/2025/09/29/tiny_recursive_models.html",
+    "codeUrl": "https://github.com/SamsungSAILMontreal/TinyRecursiveModels",
+    "dataUrl": "https://huggingface.co/arcprize/trm_arc_prize_verification",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:20.917855+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.marktechpost.com/2025/10/09/tiny-recursive-model-trm-a-tiny-7m-model-that-surpass-deepseek-r1-gemini-2-5-pro-and-o3-mini-at-reasoning-on-both-arg-agi-1-and-arc-agi-2/",
+        "notes": "The Tiny Recursive Model (TRM) is a 7M-parameter recursive reasoning model developed by Samsung SAIT Montreal and released on October 7, 2025. The model was officially released on GitHub under an MIT license. The date is verified through multiple news sources including MarkTechPost (October 9, 2025), VentureBeat, and Nature. However, note that the developer is Samsung SAIT Montreal, not 'Bespoke' - 'Bespoke AI' refers to Samsung's appliance line, not the model developer."
+      }
+    }
+  },
+  {
+    "id": "claude-haiku-4-5-20251001",
+    "displayName": "Claude Haiku 4.5",
+    "modelReleaseDate": "2025-10-15T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "Base LLM",
+    "modelGroup": "claude-haiku-4-5-20251001",
+    "paperUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-haiku-4-5-20251001",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:27.160814+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+        "notes": "Date corrected from 2025-10-01T00:00:00.000Z to 2025-10-15T00:00:00.000Z. Claude Haiku 4.5 was officially announced by Anthropic on October 15, 2025. The provided date of 2025-10-01 is incorrect by 14 days. Multiple sources including the official Anthropic blog, TechCrunch, and CNBC confirm the October 15, 2025 release date.",
+        "previousValue": "2025-10-01T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-haiku-4-5-20251001-thinking-1k",
+    "displayName": "Claude Haiku 4.5 (Thinking 1K)",
+    "modelReleaseDate": "2025-10-15T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-haiku-4-5-20251001",
+    "paperUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-haiku-4-5-20251001-thinking-1k",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:27.160814+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+        "notes": "Date corrected from 2025-10-01T00:00:00.000Z to 2025-10-15T00:00:00.000Z. Claude Haiku 4.5 was officially announced by Anthropic on October 15, 2025. The provided date of 2025-10-01 is incorrect by 14 days. Multiple sources including the official Anthropic blog, TechCrunch, and CNBC confirm the October 15, 2025 release date.",
+        "previousValue": "2025-10-01T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-haiku-4-5-20251001-thinking-8k",
+    "displayName": "Claude Haiku 4.5 (Thinking 8K)",
+    "modelReleaseDate": "2025-10-15T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-haiku-4-5-20251001",
+    "paperUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-haiku-4-5-20251001-thinking-8k",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:27.160814+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+        "notes": "Date corrected from 2025-10-01T00:00:00.000Z to 2025-10-15T00:00:00.000Z. Claude Haiku 4.5 was officially announced by Anthropic on October 15, 2025. The provided date of 2025-10-01 is incorrect by 14 days. Multiple sources including the official Anthropic blog, TechCrunch, and CNBC confirm the October 15, 2025 release date.",
+        "previousValue": "2025-10-01T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-haiku-4-5-20251001-thinking-16k",
+    "displayName": "Claude Haiku 4.5 (Thinking 16K)",
+    "modelReleaseDate": "2025-10-15T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-haiku-4-5-20251001",
+    "paperUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-haiku-4-5-20251001-thinking-16k",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:27.160814+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+        "notes": "Date corrected from 2025-10-01T00:00:00.000Z to 2025-10-15T00:00:00.000Z. Claude Haiku 4.5 was officially announced by Anthropic on October 15, 2025. The provided date of 2025-10-01 is incorrect by 14 days. Multiple sources including the official Anthropic blog, TechCrunch, and CNBC confirm the October 15, 2025 release date.",
+        "previousValue": "2025-10-01T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude-haiku-4-5-20251001-thinking-32k",
+    "displayName": "Claude Haiku 4.5 (Thinking 32K)",
+    "modelReleaseDate": "2025-10-15T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-haiku-4-5-20251001",
+    "paperUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/claude-haiku-4-5-20251001-thinking-32k",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:27.160814+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-haiku-4-5",
+        "notes": "Date corrected from 2025-10-01T00:00:00.000Z to 2025-10-15T00:00:00.000Z. Claude Haiku 4.5 was officially announced by Anthropic on October 15, 2025. The provided date of 2025-10-01 is incorrect by 14 days. Multiple sources including the official Anthropic blog, TechCrunch, and CNBC confirm the October 15, 2025 release date.",
+        "previousValue": "2025-10-01T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "gemini-3-pro-preview",
+    "displayName": "Gemini 3 Pro",
+    "modelReleaseDate": "2025-11-18T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-3-pro",
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:36.630339+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/products/gemini/gemini-3/",
+        "notes": "Gemini 3 Pro was officially announced by Google on November 18, 2025. The official blog post published on this date announces the release of Gemini 3, Google's most intelligent model family, which includes Gemini 3 Pro. The date provided (2025-11-18T00:00:00.000Z) matches the official announcement date within the same day."
+      }
+    }
+  },
+  {
+    "id": "gemini-3-deep-think-preview",
+    "displayName": "Gemini 3 Deep Think (Preview) \u00b2",
+    "modelReleaseDate": null,
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-3-deep-think-preview",
+    "paperUrl": null,
+    "codeUrl": null,
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "claude-opus-4-5-20251101-thinking-none",
+    "displayName": "Opus 4.5 (Thinking, None)",
+    "modelReleaseDate": "2025-11-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "Base LLM",
+    "modelGroup": "opus-4-5-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:44.371863+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+        "notes": "Release date verified from official Anthropic announcement. Claude Opus 4.5 was announced and made available on November 24, 2025. The date provided (2025-11-24T00:00:00.000Z) is accurate."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-5-20251101-thinking-1k",
+    "displayName": "Opus 4.5 (Thinking, 1K)",
+    "modelReleaseDate": "2025-11-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "opus-4-5-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:44.371863+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+        "notes": "Release date verified from official Anthropic announcement. Claude Opus 4.5 was announced and made available on November 24, 2025. The date provided (2025-11-24T00:00:00.000Z) is accurate."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-5-20251101-thinking-8k",
+    "displayName": "Opus 4.5 (Thinking, 8K)",
+    "modelReleaseDate": "2025-11-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "opus-4-5-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:44.371863+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+        "notes": "Release date verified from official Anthropic announcement. Claude Opus 4.5 was announced and made available on November 24, 2025. The date provided (2025-11-24T00:00:00.000Z) is accurate."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-5-20251101-thinking-16k",
+    "displayName": "Opus 4.5 (Thinking, 16K)",
+    "modelReleaseDate": "2025-11-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "opus-4-5-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:44.371863+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+        "notes": "Release date verified from official Anthropic announcement. Claude Opus 4.5 was announced and made available on November 24, 2025. The date provided (2025-11-24T00:00:00.000Z) is accurate."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-5-20251101-thinking-32k",
+    "displayName": "Opus 4.5 (Thinking, 32K)",
+    "modelReleaseDate": "2025-11-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "opus-4-5-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": false,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:44.371863+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+        "notes": "Release date verified from official Anthropic announcement. Claude Opus 4.5 was announced and made available on November 24, 2025. The date provided (2025-11-24T00:00:00.000Z) is accurate."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-5-20251101-thinking-64k",
+    "displayName": "Opus 4.5 (Thinking, 64K)",
+    "modelReleaseDate": "2025-11-24T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "opus-4-5-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:44.371863+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-5",
+        "notes": "Release date verified from official Anthropic announcement. Claude Opus 4.5 was announced and made available on November 24, 2025. The date provided (2025-11-24T00:00:00.000Z) is accurate."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-2025-12-11-thinking-none",
+    "displayName": "GPT-5.2",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:45.759393+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "Official OpenAI blog post announcing GPT-5.2 release on December 11, 2025. The model was made available starting with paid ChatGPT plans and to all developers via the API on the same date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-2025-12-11-thinking-low",
+    "displayName": "GPT-5.2 (Low)",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-2-2025-12-11-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:53.831477+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "GPT-5.2 was officially announced and released by OpenAI on December 11, 2025. Multiple sources confirm this date, including the official OpenAI blog post, OpenAI developer community posts, and major tech news outlets (TechCrunch, Microsoft Azure Blog). The model began rolling out to ChatGPT paid users and was made available to all API developers on this date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-2025-12-11-thinking-medium",
+    "displayName": "GPT-5.2 (Medium)",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-2-2025-12-11-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:53.831477+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "GPT-5.2 was officially announced and released by OpenAI on December 11, 2025. Multiple sources confirm this date, including the official OpenAI blog post, OpenAI developer community posts, and major tech news outlets (TechCrunch, Microsoft Azure Blog). The model began rolling out to ChatGPT paid users and was made available to all API developers on this date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-2025-12-11-thinking-high",
+    "displayName": "GPT-5.2 (High)",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-2-2025-12-11-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:53.831477+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "GPT-5.2 was officially announced and released by OpenAI on December 11, 2025. Multiple sources confirm this date, including the official OpenAI blog post, OpenAI developer community posts, and major tech news outlets (TechCrunch, Microsoft Azure Blog). The model began rolling out to ChatGPT paid users and was made available to all API developers on this date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-2025-12-11-thinking-xhigh",
+    "displayName": "GPT-5.2 (X-High)",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-2-2025-12-11-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": true,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:35:53.831477+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "GPT-5.2 was officially announced and released by OpenAI on December 11, 2025. Multiple sources confirm this date, including the official OpenAI blog post, OpenAI developer community posts, and major tech news outlets (TechCrunch, Microsoft Azure Blog). The model began rolling out to ChatGPT paid users and was made available to all API developers on this date."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-pro-2025-12-11-medium",
+    "displayName": "GPT-5.2 Pro (Medium)",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-2-pro-2025-12-11-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:01.278630+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "GPT-5.2 Pro was officially announced and released by OpenAI on December 11, 2025. This date matches the provided date exactly. The model was announced via OpenAI's official blog post and became available in ChatGPT and API on the same day."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-pro-2025-12-11-high",
+    "displayName": "GPT-5.2 Pro (High)",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-2-pro-2025-12-11-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:01.278630+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "GPT-5.2 Pro was officially announced and released by OpenAI on December 11, 2025. This date matches the provided date exactly. The model was announced via OpenAI's official blog post and became available in ChatGPT and API on the same day."
+      }
+    }
+  },
+  {
+    "id": "gpt-5-2-pro-2025-12-11-xhigh",
+    "displayName": "GPT-5.2 Pro (X-High)",
+    "modelReleaseDate": "2025-12-11T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-2-pro-2025-12-11-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:01.278630+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://openai.com/index/introducing-gpt-5-2/",
+        "notes": "GPT-5.2 Pro was officially announced and released by OpenAI on December 11, 2025. This date matches the provided date exactly. The model was announced via OpenAI's official blog post and became available in ChatGPT and API on the same day."
+      }
+    }
+  },
+  {
+    "id": "gemini-3-flash-preview-thinking-minimal",
+    "displayName": "Gemini 3 Flash Preview (Minimal)",
+    "modelReleaseDate": "2025-12-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-3-flash-preview-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:02.020524+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/products/gemini/gemini-3-flash/",
+        "notes": "Official Google blog announcement confirms Gemini 3 Flash Preview was released on December 17, 2025. Multiple official sources from Google (blog.google, workspaceupdates.googleblog.com, developers.googleblog.com) and third-party tech news outlets (TechCrunch, 9to5Google) corroborate this date. The model became available through Gemini API, Google AI Studio, and the Gemini app on this date."
+      }
+    }
+  },
+  {
+    "id": "gemini-3-flash-preview-thinking-low",
+    "displayName": "Gemini 3 Flash Preview (Low)",
+    "modelReleaseDate": "2025-12-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-3-flash-preview-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:02.020524+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/products/gemini/gemini-3-flash/",
+        "notes": "Official Google blog announcement confirms Gemini 3 Flash Preview was released on December 17, 2025. Multiple official sources from Google (blog.google, workspaceupdates.googleblog.com, developers.googleblog.com) and third-party tech news outlets (TechCrunch, 9to5Google) corroborate this date. The model became available through Gemini API, Google AI Studio, and the Gemini app on this date."
+      }
+    }
+  },
+  {
+    "id": "gemini-3-flash-preview-thinking-medium",
+    "displayName": "Gemini 3 Flash Preview (Medium)",
+    "modelReleaseDate": "2025-12-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-3-flash-preview-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:02.020524+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/products/gemini/gemini-3-flash/",
+        "notes": "Official Google blog announcement confirms Gemini 3 Flash Preview was released on December 17, 2025. Multiple official sources from Google (blog.google, workspaceupdates.googleblog.com, developers.googleblog.com) and third-party tech news outlets (TechCrunch, 9to5Google) corroborate this date. The model became available through Gemini API, Google AI Studio, and the Gemini app on this date."
+      }
+    }
+  },
+  {
+    "id": "gemini-3-flash-preview-thinking-high",
+    "displayName": "Gemini 3 Flash Preview (High)",
+    "modelReleaseDate": "2025-12-17T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "gemini-3-flash-preview-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": true,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:02.020524+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/products/gemini/gemini-3-flash/",
+        "notes": "Official Google blog announcement confirms Gemini 3 Flash Preview was released on December 17, 2025. Multiple official sources from Google (blog.google, workspaceupdates.googleblog.com, developers.googleblog.com) and third-party tech news outlets (TechCrunch, 9to5Google) corroborate this date. The model became available through Gemini API, Google AI Studio, and the Gemini app on this date."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-6-thinking-120K-low",
+    "displayName": "Claude Opus 4.6 (120K, Low)",
+    "modelReleaseDate": "2026-02-05T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-opus-4-6-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "notes": "Evaluation conducted with a 120K thinking budget and a maximum context window of 128K tokens and 'low' output effort.",
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:22.826452+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-6",
+        "notes": "Official Anthropic announcement confirms Claude Opus 4.6 was released on February 5, 2026. The provided date matches the official release announcement date exactly."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-6-thinking-120K-medium",
+    "displayName": "Claude Opus 4.6 (120K, Medium)",
+    "modelReleaseDate": "2026-02-05T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-opus-4-6-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "notes": "Evaluation conducted with a 120K thinking budget and a maximum context window of 128K tokens and 'medium' output effort.",
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:22.826452+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-6",
+        "notes": "Official Anthropic announcement confirms Claude Opus 4.6 was released on February 5, 2026. The provided date matches the official release announcement date exactly."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-6-thinking-120K-high",
+    "displayName": "Claude Opus 4.6 (120K, High)",
+    "modelReleaseDate": "2026-02-05T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-opus-4-6-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null,
+    "notes": "Evaluation conducted with a 120K thinking budget and a maximum context window of 128K tokens and 'high' output effort.",
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:22.826452+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-6",
+        "notes": "Official Anthropic announcement confirms Claude Opus 4.6 was released on February 5, 2026. The provided date matches the official release announcement date exactly."
+      }
+    }
+  },
+  {
+    "id": "claude-opus-4-6-thinking-120K-max",
+    "displayName": "Claude Opus 4.6 (120K, Max)",
+    "modelReleaseDate": "2026-02-05T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-opus-4-6-thinking",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": true,
+    "notes": "Evaluation conducted with a 120K thinking budget and a maximum context window of 128K tokens and 'max' output effort.",
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:22.826452+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-opus-4-6",
+        "notes": "Official Anthropic announcement confirms Claude Opus 4.6 was released on February 5, 2026. The provided date matches the official release announcement date exactly."
+      }
+    }
+  },
+  {
+    "id": "gemini_3_deep_think_022026",
+    "displayName": "Gemini 3 Deep Think (2/26)",
+    "modelReleaseDate": "2026-02-12T16:13:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": true,
+    "notes": "",
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:21.114898+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+        "notes": "Date corrected from 2026-02-20T00:00:00.000Z to 2026-02-12T16:13:00.000Z. The official Google blog post announcing Gemini 3 Deep Think was published on February 12, 2026 at 16:13 UTC. The recorded date of 2026-02-20 is 8 days later than the actual release date.",
+        "previousValue": "2026-02-20T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "claude_sonnet_4_6_max",
+    "displayName": "Claude Sonnet 4.6 (Max)",
+    "modelReleaseDate": "2026-02-17T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-6",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "notes": "Evaluation conducted with a 120K thinking budget and a maximum context window of 128K tokens and 'max' output effort.",
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:33.270495+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "notes": "Claude Sonnet 4.6 was officially announced by Anthropic on February 17, 2026, as confirmed by the official announcement blog post. The recorded date of 2026-02-17T00:00:00.000Z matches the official release announcement date."
+      }
+    }
+  },
+  {
+    "id": "claude_sonnet_4_6_high",
+    "displayName": "Claude Sonnet 4.6 (High)",
+    "modelReleaseDate": "2026-02-17T00:00:00.000Z",
+    "providerId": "Anthropic",
+    "modelType": "CoT",
+    "modelGroup": "claude-sonnet-4-6",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null,
+    "notes": "Evaluation conducted with a 120K thinking budget and a maximum context window of 128K tokens and 'high' output effort.",
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:33.270495+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://www.anthropic.com/news/claude-sonnet-4-6",
+        "notes": "Claude Sonnet 4.6 was officially announced by Anthropic on February 17, 2026, as confirmed by the official announcement blog post. The recorded date of 2026-02-17T00:00:00.000Z matches the official release announcement date."
+      }
+    }
+  },
+  {
+    "id": "gemini-3-1-pro-preview",
+    "displayName": "Gemini 3.1 Pro (Preview)",
+    "modelReleaseDate": "2026-02-19T00:00:00.000Z",
+    "providerId": "Google",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": true,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:41:53.556515+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+        "notes": "Official Google blog announcement confirms Gemini 3.1 Pro was announced on February 19, 2026. The model was released in preview across multiple platforms including Gemini API, Vertex AI, and the Gemini app."
+      }
+    }
+  },
+  {
+    "id": "kimi-k2.5",
+    "displayName": "Kimi K2.5",
+    "modelReleaseDate": "2026-01-27T00:00:00.000Z",
+    "providerId": "Moonshot AI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/kimi-k2.5",
+    "featured": null,
+    "metadata": {
+      "modelReleaseDate": {
+        "verified": true,
+        "verifiedAt": "2026-02-20T14:36:20.108709+00:00",
+        "confidence": "high",
+        "sourceUrl": "https://techcrunch.com/2026/01/27/chinas-moonshot-releases-a-new-open-source-model-kimi-k2-5-and-a-coding-agent/",
+        "notes": "Date corrected from 2025-01-27T00:00:00.000Z to 2026-01-27T00:00:00.000Z. Kimi K2.5 was officially released by Moonshot AI on January 27, 2026, not 2025. Multiple official sources and news outlets confirm the 2026 release date. The model is an open-weight multimodal agentic model with 1 trillion parameters featuring Agent Swarm capabilities.",
+        "previousValue": "2025-01-27T00:00:00.000Z"
+      }
+    }
+  },
+  {
+    "id": "minimax-m2.5",
+    "displayName": "Minimax M2.5",
+    "modelReleaseDate": "2026-02-12T00:00:00.000Z",
+    "providerId": "Minimax",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/minimax-m2.5",
+    "featured": null
+  },
+  {
+    "id": "deepseek-v3.2",
+    "displayName": "Deepseek V3.2",
+    "modelReleaseDate": "2025-12-01T00:00:00.000Z",
+    "providerId": "Deepseek",
+    "modelType": "Base LLM",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": null,
+    "featured": null
+  },
+  {
+    "id": "glm-5",
+    "displayName": "GLM-5",
+    "modelReleaseDate": "2026-02-20T00:00:00.000Z",
+    "providerId": "Z.ai",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "https://huggingface.co/datasets/arcprize/arc_agi_v1_public_eval/tree/main/glm-5",
+    "featured": null
+  },
+  {
+    "id": "gpt-5-4-low",
+    "displayName": "GPT-5.4 (Low)",
+    "modelReleaseDate": "2026-03-04T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-4",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "gpt-5-4-medium",
+    "displayName": "GPT-5.4 (Medium)",
+    "modelReleaseDate": "2026-03-04T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-4",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "gpt-5-4-high",
+    "displayName": "GPT-5.4 (High)",
+    "modelReleaseDate": "2026-03-04T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-4",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "gpt-5-4-xhigh",
+    "displayName": "GPT-5.4 (xHigh)",
+    "modelReleaseDate": "2026-03-04T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "gpt-5-4",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null
+  },
+  {
+    "id": "gpt-5-4-pro-xhigh",
+    "displayName": "GPT-5.4 Pro (xHigh)",
+    "modelReleaseDate": "2026-03-04T00:00:00.000Z",
+    "providerId": "OpenAI",
+    "modelType": "CoT",
+    "modelGroup": "",
+    "paperUrl": "",
+    "codeUrl": "",
+    "dataUrl": "",
+    "featured": null
+  }
 ]

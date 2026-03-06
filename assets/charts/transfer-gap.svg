@@ -1,1 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360"><rect width="900" height="360" fill="#f7faf7"/><text x="24" y="36" font-family="Arial" font-size="26" font-weight="700" fill="#152312">Transfer Gap Matrix</text><line x1="334.6" y1="70" x2="423.4" y2="70" stroke="#90a89c" stroke-width="2"/><circle cx="334.6" cy="70" r="4" fill="#b91c1c"/><circle cx="423.4" cy="70" r="4" fill="#0f766e"/><line x1="312.4" y1="92" x2="371.6" y2="92" stroke="#90a89c" stroke-width="2"/><circle cx="312.4" cy="92" r="4" fill="#b91c1c"/><circle cx="371.6" cy="92" r="4" fill="#0f766e"/><line x1="353.1" y1="114" x2="393.8" y2="114" stroke="#90a89c" stroke-width="2"/><circle cx="353.1" cy="114" r="4" fill="#b91c1c"/><circle cx="393.8" cy="114" r="4" fill="#0f766e"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="506" viewBox="0 0 900 506">
+<rect width="900" height="506" fill="#fbfdfb" rx="8"/>
+<text x="160" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1d2a1d">Transfer Gap Matrix</text>
+<text x="160" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#5a6e58">18 models | ARC-AGI vs HLE score gap</text>
+<circle cx="160" cy="46" r="4" fill="#0f766e"/>
+<text x="168" y="49" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#5a6e58">ARC-AGI</text>
+<circle cx="229.5" cy="46" r="4" fill="#b91c1c"/>
+<text x="237.5" y="49" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#5a6e58">HLE</text>
+<line x1="160.0" y1="60" x2="160.0" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="160.0" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">0</text>
+<line x1="261.4" y1="60" x2="261.4" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="261.4" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">10</text>
+<line x1="362.9" y1="60" x2="362.9" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="362.9" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">20</text>
+<line x1="464.3" y1="60" x2="464.3" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="464.3" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">30</text>
+<line x1="565.7" y1="60" x2="565.7" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="565.7" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">40</text>
+<line x1="667.1" y1="60" x2="667.1" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="667.1" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">50</text>
+<line x1="768.6" y1="60" x2="768.6" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="768.6" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">60</text>
+<line x1="870.0" y1="60" x2="870.0" y2="456" stroke="#d3dfd4" stroke-width="0.5"/>
+<text x="870.0" y="472" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="middle">70</text>
+<text x="515.0" y="492" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#5a6e58" text-anchor="middle">Score (%)</text>
+<text x="154" y="74.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Gemini 3.1 Pro</text>
+<line x1="625.6" y1="71.0" x2="903.8" y2="71.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="903.8" cy="71.0" r="4" fill="#0f766e"/>
+<circle cx="625.6" cy="71.0" r="4" fill="#b91c1c"/>
+<text x="911.8" y="74.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">+27.4</text>
+<text x="154" y="96.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Gemini 2.5 Pro</text>
+<line x1="200.6" y1="93.0" x2="379.5" y2="93.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="200.6" cy="93.0" r="4" fill="#0f766e"/>
+<circle cx="379.5" cy="93.0" r="4" fill="#b91c1c"/>
+<text x="387.5" y="96.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-17.6</text>
+<text x="154" y="118.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">DeepSeek 3.2</text>
+<line x1="210.7" y1="115.0" x2="381.1" y2="115.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="210.7" cy="115.0" r="4" fill="#0f766e"/>
+<circle cx="381.1" cy="115.0" r="4" fill="#b91c1c"/>
+<text x="389.1" y="118.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-16.8</text>
+<text x="154" y="140.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Kimi K2</text>
+<line x1="210.7" y1="137.0" x2="377.1" y2="137.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="210.7" cy="137.0" r="4" fill="#0f766e"/>
+<circle cx="377.1" cy="137.0" r="4" fill="#b91c1c"/>
+<text x="385.1" y="140.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-16.4</text>
+<text x="154" y="162.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">GPT-5</text>
+<line x1="260.4" y1="159.0" x2="416.8" y2="159.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="260.4" cy="159.0" r="4" fill="#0f766e"/>
+<circle cx="416.8" cy="159.0" r="4" fill="#b91c1c"/>
+<text x="424.8" y="162.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-15.4</text>
+<text x="154" y="184.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">GPT-5-mini</text>
+<line x1="204.6" y1="181.0" x2="357.2" y2="181.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="204.6" cy="181.0" r="4" fill="#0f766e"/>
+<circle cx="357.2" cy="181.0" r="4" fill="#b91c1c"/>
+<text x="365.2" y="184.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-15.0</text>
+<text x="154" y="206.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Gemini 3.1 Flash-L</text>
+<line x1="185.4" y1="203.0" x2="336.5" y2="203.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="185.4" cy="203.0" r="4" fill="#0f766e"/>
+<circle cx="336.5" cy="203.0" r="4" fill="#b91c1c"/>
+<text x="344.5" y="206.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-14.9</text>
+<text x="154" y="228.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">kimi-k2.5</text>
+<line x1="269.5" y1="225.0" x2="417.6" y2="225.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="269.5" cy="225.0" r="4" fill="#0f766e"/>
+<circle cx="417.6" cy="225.0" r="4" fill="#b91c1c"/>
+<text x="425.6" y="228.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-14.6</text>
+<text x="154" y="250.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Grok 4 Fast</text>
+<line x1="193.5" y1="247.0" x2="340.5" y2="247.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="193.5" cy="247.0" r="4" fill="#0f766e"/>
+<circle cx="340.5" cy="247.0" r="4" fill="#b91c1c"/>
+<text x="348.5" y="250.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-14.5</text>
+<text x="154" y="272.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">o3</text>
+<line x1="225.9" y1="269.0" x2="366.1" y2="269.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="225.9" cy="269.0" r="4" fill="#0f766e"/>
+<circle cx="366.1" cy="269.0" r="4" fill="#b91c1c"/>
+<text x="374.1" y="272.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-13.8</text>
+<text x="154" y="294.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">o4-mini</text>
+<line x1="221.9" y1="291.0" x2="343.4" y2="291.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="221.9" cy="291.0" r="4" fill="#0f766e"/>
+<circle cx="343.4" cy="291.0" r="4" fill="#b91c1c"/>
+<text x="351.4" y="294.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-12.0</text>
+<text x="154" y="316.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Grok 4.1 Fast</text>
+<line x1="228.0" y1="313.0" x2="346.6" y2="313.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="228.0" cy="313.0" r="4" fill="#0f766e"/>
+<circle cx="346.6" cy="313.0" r="4" fill="#b91c1c"/>
+<text x="354.6" y="316.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-11.7</text>
+<text x="154" y="338.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">DeepSeek 3.2 Exp</text>
+<line x1="202.3" y1="335.0" x2="316.2" y2="335.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="202.3" cy="335.0" r="4" fill="#0f766e"/>
+<circle cx="316.2" cy="335.0" r="4" fill="#b91c1c"/>
+<text x="324.2" y="338.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-11.2</text>
+<text x="154" y="360.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">o3-mini</text>
+<line x1="190.4" y1="357.0" x2="295.9" y2="357.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="190.4" cy="357.0" r="4" fill="#0f766e"/>
+<circle cx="295.9" cy="357.0" r="4" fill="#b91c1c"/>
+<text x="303.9" y="360.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-10.4</text>
+<text x="154" y="382.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Opus 4.6</text>
+<line x1="506.9" y1="379.0" x2="609.3" y2="379.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="609.3" cy="379.0" r="4" fill="#0f766e"/>
+<circle cx="506.9" cy="379.0" r="4" fill="#b91c1c"/>
+<text x="617.3" y="382.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">+10.1</text>
+<text x="154" y="404.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">GPT-5.1</text>
+<line x1="338.5" y1="401.0" x2="435.9" y2="401.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="338.5" cy="401.0" r="4" fill="#0f766e"/>
+<circle cx="435.9" cy="401.0" r="4" fill="#b91c1c"/>
+<text x="443.9" y="404.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-9.6</text>
+<text x="154" y="426.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Gemini 2.5 Flash</text>
+<line x1="185.4" y1="423.0" x2="282.5" y2="423.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="185.4" cy="423.0" r="4" fill="#0f766e"/>
+<circle cx="282.5" cy="423.0" r="4" fill="#b91c1c"/>
+<text x="290.5" y="426.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-9.6</text>
+<text x="154" y="448.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="end">Grok 4</text>
+<line x1="322.3" y1="445.0" x2="408.7" y2="445.0" stroke="#a8bbb0" stroke-width="2"/>
+<circle cx="322.3" cy="445.0" r="4" fill="#0f766e"/>
+<circle cx="408.7" cy="445.0" r="4" fill="#b91c1c"/>
+<text x="416.7" y="448.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">-8.5</text>
+</svg>

@@ -2,28 +2,39 @@
 
 Narrative-first benchmark observatory comparing ARC-AGI and Humanity's Last Exam across multiple capability dimensions.
 
+**Core thesis:** Capability is rising fast, but efficiency, calibration, and domain robustness are NOT rising equally.
+
+## Charts
+
+### Twin Rivers Timeline
+
+How progress differs across ARC-AGI and HLE over release time.
+
+![Twin Rivers Timeline](assets/charts/twin-rivers.svg)
+
+### Efficiency Illusion Map
+
+Do higher ARC scores come from smarter models, higher cost, or both?
+
+![Efficiency Illusion Map](assets/charts/efficiency-map.svg)
+
+### Confidence vs Competence
+
+A model is safer when it is accurate and well-calibrated.
+
+![Confidence vs Competence](assets/charts/confidence-lens.svg)
+
+### Transfer Gap Matrix
+
+How much does ARC-AGI score differ from HLE score for the same model?
+
+![Transfer Gap Matrix](assets/charts/transfer-gap.svg)
+
 ## Live interactive
 
-- https://mathias3.github.io/BenchmarkAtlas/
+https://mathias3.github.io/BenchmarkAtlas/
 
-## Preview charts
-
-The static SVG previews in `assets/charts/` are lightweight artifacts from pipeline exports and are not representative of the interactive dashboard quality.
-
-Use the live interactive view for actual chart experience:
-
-- https://mathias3.github.io/BenchmarkAtlas/
-
-## Current status
-
-Phase 1 foundation is implemented:
-- Data pipeline (`pipeline/`) for ingest, normalization, analysis, and export.
-- Static frontend (`site/`) with 4 chart modules:
-  - Twin Rivers Timeline
-  - Efficiency Illusion Map
-  - Confidence vs Competence Lens
-  - Transfer Gap Matrix
-- Deterministic site data output (`site/data.json`).
+The interactive version has tooltips, legends, and hover details for every data point.
 
 ## Run locally
 
@@ -33,23 +44,13 @@ Phase 1 foundation is implemented:
 python -m pipeline.run_pipeline
 ```
 
-Or use the Repokit-style agent CLI experiment:
-
-```bash
-python tools/atlas_cli.py scan --path .
-python tools/atlas_cli.py eval
-python tools/atlas_cli.py viz
-```
-
 2. Serve static site:
 
 ```bash
 python -m http.server 8000
 ```
 
-3. Open:
-
-`http://localhost:8000/site/`
+3. Open: `http://localhost:8000/site/`
 
 ## Data sources
 
@@ -60,5 +61,5 @@ python -m http.server 8000
 ## Notes
 
 - If network fetch fails, cached files under `data/sources/` are used.
-- Model matching across ARC/HLE is handled via `data/model_aliases.json` and can be curated over time.
-- This repo keeps Phase 2 (subject-level HLE blind spots) out of the MVP until local eval data is available.
+- Model matching across ARC/HLE is handled via `data/model_aliases.json`.
+- Phase 2 (subject-level HLE blind spots) deferred until local eval data is available.
