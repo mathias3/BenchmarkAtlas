@@ -17,10 +17,12 @@ MODEL_KEY_CANDIDATES = (
     "name",
     "modelId",
     "model_id",
+    "id",
 )
 
 PROVIDER_KEY_CANDIDATES = (
     "provider",
+    "providerId",
     "organization",
     "org",
     "company",
@@ -203,13 +205,14 @@ def normalize_sources() -> list[UnifiedModelRecord]:
 
     arc_model_meta: dict[str, dict[str, Any]] = {}
     for item in arc_models:
-        model_name = _extract_first(item, MODEL_KEY_CANDIDATES)
-        if not isinstance(model_name, str):
+        # ARC models use "id" as the key that matches evaluations' "modelId"
+        model_id = item.get("id") or _extract_first(item, MODEL_KEY_CANDIDATES)
+        if not isinstance(model_id, str):
             continue
         if item.get("display") is False:
             continue
-        canonical = _canonical_name(model_name, aliases)
-        arc_model_meta[canonical] = item
+        # Index by the raw id so arc_evaluations can look up by their modelId
+        arc_model_meta[model_id] = item
 
     for item in arc_eval:
         model_name = _extract_first(item, MODEL_KEY_CANDIDATES)
@@ -218,17 +221,29 @@ def normalize_sources() -> list[UnifiedModelRecord]:
         if item.get("display") is False:
             continue
 
-        canonical = _canonical_name(model_name, aliases)
+        # Look up arc_model_meta by the raw modelId first, then by canonical name
+        arc_meta = arc_model_meta.get(model_name) or arc_model_meta.get(
+            _canonical_name(model_name, aliases), {}
+        )
+
+        # Use displayName from arc_models as canonical name when available
+        display_name = arc_meta.get("displayName") if arc_meta else None
+        if display_name:
+            canonical = _canonical_name(display_name, aliases)
+        else:
+            canonical = _canonical_name(model_name, aliases)
         model_key = _slugify(canonical)
 
-        arc_meta = arc_model_meta.get(canonical, {})
         provider = _extract_first(item, PROVIDER_KEY_CANDIDATES) or _extract_first(
             arc_meta, PROVIDER_KEY_CANDIDATES
         )
         release_date = (
-            _extract_first(item, ("release_date", "releaseDate", "created_at", "date"))
-            or _extract_first(arc_meta, ("release_date", "releaseDate", "created_at", "date"))
+            _extract_first(item, ("release_date", "releaseDate", "modelReleaseDate", "created_at", "date"))
+            or _extract_first(arc_meta, ("modelReleaseDate", "release_date", "releaseDate", "created_at", "date"))
         )
+        # Strip ISO timestamp to date only
+        if release_date and "T" in str(release_date):
+            release_date = str(release_date).split("T")[0]
 
         raw_arc_score = _to_float(_extract_first(item, ("score", "overall_score", "pass_rate", "accuracy")))
         # ARC API returns scores as 0-1 fractions; normalize to 0-100 percentages.

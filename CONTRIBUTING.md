@@ -1,5 +1,9 @@
 # Contributing
 
+## Commit messages
+
+Do NOT add "Co-Authored-By: Claude" or any AI attribution lines to commit messages in this repository.
+
 ## Development loop
 
 1. Run `python -m pipeline.run_pipeline`.

@@ -21,7 +21,9 @@ export function renderConfidenceLens(containerSelector, payload) {
     .domain([0, d3.max(points, (d) => d.calibration_error) || 1])
     .range([innerHeight, 0])
     .nice();
-  const r = d3.scaleSqrt().domain(d3.extent(points, (d) => d.arc_agi_2 || 0)).range([4, 14]);
+  const arcVals = points.map((d) => d.arc_agi_2 || 0).filter((v) => v > 0);
+  const rDomain = arcVals.length > 1 ? [0, d3.max(arcVals)] : [0, 100];
+  const r = d3.scaleSqrt().domain(rDomain).range([5, 16]);
 
   g.append("g").attr("class", "axis").attr("transform", `translate(0,${innerHeight})`).call(d3.axisBottom(x));
   g.append("g").attr("class", "axis").call(d3.axisLeft(y));
@@ -44,8 +46,9 @@ export function renderConfidenceLens(containerSelector, payload) {
 
   g.append("text")
     .attr("class", "quadrant-label")
-    .attr("x", innerWidth - 220)
+    .attr("x", innerWidth - 6)
     .attr("y", innerHeight - 8)
+    .attr("text-anchor", "end")
     .text("Ideal: accurate & calibrated");
 
   g.append("text").attr("class", "quadrant-label").attr("x", 8).attr("y", 12).text("Danger: overconfident");

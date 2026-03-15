@@ -28,14 +28,15 @@
 <text x="866" y="362" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5a6e58" text-anchor="end" opacity="0.6">Ideal: accurate &amp; calibrated</text>
 <text x="74" y="72" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#5a6e58" opacity="0.6">Danger: overconfident</text>
 <circle cx="124.0" cy="25.1" r="3.0" fill="#0f766e" opacity="0.5"/>
+<circle cx="240.0" cy="87.1" r="3.0" fill="#0f766e" opacity="0.5"/>
+<circle cx="836.0" cy="148.3" r="7.2" fill="#0f766e" opacity="0.5"/>
+<circle cx="668.0" cy="200.7" r="8.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="578.0" cy="75.9" r="4.3" fill="#0f766e" opacity="0.5"/>
 <circle cx="988.0" cy="175.1" r="11.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="491.4" cy="203.1" r="6.4" fill="#0f766e" opacity="0.5"/>
 <circle cx="754.0" cy="191.8" r="8.7" fill="#0f766e" opacity="0.5"/>
 <circle cx="802.0" cy="156.5" r="7.2" fill="#0f766e" opacity="0.5"/>
-<circle cx="836.0" cy="148.3" r="7.2" fill="#0f766e" opacity="0.5"/>
 <circle cx="586.0" cy="197.6" r="7.2" fill="#0f766e" opacity="0.5"/>
-<circle cx="668.0" cy="200.7" r="8.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="614.0" cy="184.8" r="5.5" fill="#0f766e" opacity="0.5"/>
 <circle cx="498.0" cy="107.3" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="576.4" cy="176.2" r="4.1" fill="#0f766e" opacity="0.5"/>
@@ -47,21 +48,20 @@
 <circle cx="458.8" cy="118.1" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="311.6" cy="60.0" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="506.0" cy="142.2" r="3.0" fill="#0f766e" opacity="0.5"/>
-<circle cx="378.0" cy="98.4" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="204.0" cy="46.8" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="234.0" cy="60.0" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="264.0" cy="135.6" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="338.0" cy="60.0" r="3.0" fill="#0f766e" opacity="0.5"/>
-<circle cx="240.0" cy="87.1" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="262.0" cy="79.4" r="3.2" fill="#0f766e" opacity="0.5"/>
 <circle cx="230.0" cy="79.4" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="446.0" cy="94.9" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="230.0" cy="48.4" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="418.0" cy="87.7" r="3.0" fill="#0f766e" opacity="0.5"/>
+<circle cx="875.6" cy="211.7" r="10.5" fill="#0f766e" opacity="0.5"/>
 <text x="994.0" y="169.1" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Gemini 3.1 Pro</text>
+<text x="881.6" y="205.7" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">GPT-5.4</text>
 <text x="842.0" y="142.3" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Gemini 3 Pro</text>
 <text x="808.0" y="150.5" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Gemini 3 Flash</text>
 <text x="760.0" y="185.8" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Opus 4.6</text>
 <text x="674.0" y="194.7" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">GPT-5.2</text>
-<text x="620.0" y="178.8" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">GPT-5.1</text>
 </svg>

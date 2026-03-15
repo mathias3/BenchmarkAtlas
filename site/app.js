@@ -11,14 +11,39 @@ async function loadData() {
   return res.json();
 }
 
+const SOURCE_LABELS = {
+  "https://arcprize.org/media/data/leaderboard/evaluations.json": {
+    label: "ARC Prize Leaderboard",
+    href: "https://arcprize.org/leaderboard",
+  },
+  "https://dashboard.safe.ai/api/models": {
+    label: "HLE Dashboard",
+    href: "https://agi.safe.ai",
+  },
+};
+
+function makeSourceLinks(sourceStr) {
+  const parts = sourceStr.split(/\s*\+\s*/);
+  return parts
+    .map((url) => {
+      const s = url.trim();
+      const meta = SOURCE_LABELS[s];
+      if (meta) {
+        return `<a href="${meta.href}" target="_blank" rel="noopener">${meta.label}</a>`;
+      }
+      return s;
+    })
+    .join(" + ");
+}
+
 function writeMeta(idPrefix, payload, modelCount) {
   const sourceEl = document.getElementById(`${idPrefix}-source`);
   const noteEl = document.getElementById(`${idPrefix}-note`);
   if (sourceEl) {
-    sourceEl.textContent = `${modelCount} models | Source: ${payload.source}`;
+    sourceEl.innerHTML = `${modelCount} models &middot; ${makeSourceLinks(payload.source || "")}`;
   }
   if (noteEl) {
-    noteEl.textContent = `Assumption: ${payload.assumption_note}`;
+    noteEl.textContent = payload.assumption_note || "";
   }
 }
 

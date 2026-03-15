@@ -156,10 +156,10 @@
 <circle cx="77.8" cy="71.2" r="4" fill="#0f766e" opacity="0.5"/>
 <circle cx="167.2" cy="65.4" r="4" fill="#0f766e" opacity="0.5"/>
 <path d="M70.0,361.5 L70.0,317.3 L70.1,315.4 L70.2,271.2 L70.3,251.7 L70.5,189.8 L70.9,159.5 L72.1,122.0 L72.4,96.2 L73.8,84.8 L74.9,73.6 L76.7,66.2 L167.2,65.4 L377.3,60.0" fill="none" stroke="#b91c1c" stroke-width="2"/>
-<text x="383.3" y="54.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">2025_human_panel</text>
-<text x="173.2" y="59.4" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">gpt-5-4-pro-xhigh</text>
-<text x="256.7" y="60.2" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">stem_grad</text>
-<text x="82.7" y="60.2" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">gemini-3-1-pro-previ</text>
-<text x="215.5" y="61.4" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">gpt-5-2-pro-2025-12-</text>
-<text x="99.4" y="64.1" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">claude-opus-4-6-thin</text>
+<text x="383.3" y="54.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Human Panel</text>
+<text x="173.2" y="59.4" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">GPT-5.4 Pro (xHigh)</text>
+<text x="256.7" y="60.2" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Stem Grad</text>
+<text x="82.7" y="60.2" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Gemini 3.1 Pro (Prev</text>
+<text x="215.5" y="61.4" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">GPT-5.2 Pro (X-High)</text>
+<text x="99.4" y="64.1" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d">Claude Opus 4.6 (120</text>
 </svg>

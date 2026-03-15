@@ -79,6 +79,15 @@ h1 {
   margin-right: 0.8rem;
 }
 
+.meta a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.meta a:hover {
+  text-decoration: underline;
+}
+
 .chart {
   min-height: 340px;
   width: 100%;

@@ -31,23 +31,27 @@ export function renderTwinRivers(containerSelector, points) {
   const arcSeries = rows.filter((d) => d.arc_score != null);
   const hleSeries = rows.filter((d) => d.hle_score != null);
 
-  g.append("path")
-    .datum(arcSeries)
-    .attr("fill", "none")
-    .attr("stroke", COLORS.arc)
-    .attr("stroke-opacity", 0.3)
-    .attr("stroke-width", 1.5)
-    .attr("stroke-dasharray", "4,4")
-    .attr("d", d3.line().x((d) => x(d.date)).y((d) => y(d.arc_score)));
+  if (arcSeries.length > 1) {
+    g.append("path")
+      .datum(arcSeries)
+      .attr("fill", "none")
+      .attr("stroke", COLORS.arc)
+      .attr("stroke-opacity", 0.7)
+      .attr("stroke-width", 2)
+      .attr("stroke-dasharray", "5,3")
+      .attr("d", d3.line().x((d) => x(d.date)).y((d) => y(d.arc_score)));
+  }
 
-  g.append("path")
-    .datum(hleSeries)
-    .attr("fill", "none")
-    .attr("stroke", COLORS.hle)
-    .attr("stroke-opacity", 0.3)
-    .attr("stroke-width", 1.5)
-    .attr("stroke-dasharray", "4,4")
-    .attr("d", d3.line().x((d) => x(d.date)).y((d) => y(d.hle_score)));
+  if (hleSeries.length > 1) {
+    g.append("path")
+      .datum(hleSeries)
+      .attr("fill", "none")
+      .attr("stroke", COLORS.hle)
+      .attr("stroke-opacity", 0.7)
+      .attr("stroke-width", 2)
+      .attr("stroke-dasharray", "5,3")
+      .attr("d", d3.line().x((d) => x(d.date)).y((d) => y(d.hle_score)));
+  }
 
   g.selectAll("line.bridge")
     .data(rows.filter((d) => d.arc_score != null && d.hle_score != null))
@@ -56,8 +60,9 @@ export function renderTwinRivers(containerSelector, points) {
     .attr("x2", (d) => x(d.date))
     .attr("y1", (d) => y(d.arc_score))
     .attr("y2", (d) => y(d.hle_score))
-    .attr("stroke", "#cad8cb")
-    .attr("stroke-width", 1.2);
+    .attr("stroke", "#8fb8b0")
+    .attr("stroke-width", 1.5)
+    .attr("stroke-dasharray", "2,2");
 
   const tooltip = createTooltip();
 
@@ -93,12 +98,18 @@ export function renderTwinRivers(containerSelector, points) {
     .on("mousemove", (event) => tooltip.move(event))
     .on("mouseleave", () => tooltip.hide());
 
+  // Label ARC series (or fall back to HLE if ARC has few points)
+  const labelSeries = arcSeries.length >= 4 ? arcSeries : hleSeries;
+  const labelY = arcSeries.length >= 4
+    ? (d) => y(d.arc_score)
+    : (d) => y(d.hle_score);
+  const labelPriorityKey = arcSeries.length >= 4 ? "arc_score" : "hle_score";
   addPointLabels(
     g,
-    arcSeries.map((d) => ({ ...d, labelPriority: d.arc_score || 0 })),
+    labelSeries.map((d) => ({ ...d, labelPriority: d[labelPriorityKey] || 0 })),
     (d) => x(d.date),
-    (d) => y(d.arc_score),
-    { topN: 8 }
+    labelY,
+    { topN: 10 }
   );
 
   addLegend(
