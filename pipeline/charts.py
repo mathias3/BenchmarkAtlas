@@ -55,7 +55,39 @@ def _nice_ticks(lo: float, hi: float, count: int = 5) -> list[float]:
         if v >= lo - step * 0.01:
             ticks.append(round(v, 10))
         v += step
+    if not ticks:
+        ticks = [round(lo, 10)]
+    while ticks[-1] < hi:
+        ticks.append(round(ticks[-1] + step, 10))
     return ticks
+
+
+def _label_coords(
+    px: float,
+    py: float,
+    *,
+    plot_left: float,
+    plot_right: float,
+    plot_top: float,
+    plot_bottom: float,
+    dx: float = 6,
+    dy: float = -6,
+) -> tuple[float, float, str]:
+    x = px + dx
+    anchor = "start"
+    if x > plot_right - 4:
+        x = px - dx
+        anchor = "end"
+    if x < plot_left + 4:
+        x = px + abs(dx)
+        anchor = "start"
+
+    y = py + dy
+    if y < plot_top + 10:
+        y = py + abs(dy) + 8
+    if y > plot_bottom - 4:
+        y = plot_bottom - 4
+    return x, y, anchor
 
 
 def _write(name: str, content: str) -> None:
@@ -114,10 +146,11 @@ def _gen_efficiency(data: dict) -> None:
     ox, oy = MARGIN["left"], MARGIN["top"]
     scores = [p["score"] for p in pts]
     costs = [p["cost_per_task"] for p in pts]
-    x_lo, x_hi = min(costs), max(costs)
+    x_lo, x_hi = 0, max(costs)
     y_hi = max(scores)
     x_ticks = _nice_ticks(x_lo, x_hi)
     y_ticks = _nice_ticks(0, y_hi)
+    x_hi = max(x_ticks) if x_ticks else x_hi
     y_hi = max(y_ticks) if y_ticks else y_hi
 
     out = [_header("Efficiency Illusion Map", f"{len(pts)} models | Cost per task vs ARC score")]
@@ -138,10 +171,18 @@ def _gen_efficiency(data: dict) -> None:
             d_parts.append(f"{'M' if i == 0 else 'L'}{px:.1f},{py:.1f}")
         out.append(f'<path d="{" ".join(d_parts)}" fill="none" stroke="{HLE_COLOR}" stroke-width="2"/>')
 
-    for p in sorted(pts, key=lambda p: p["score"], reverse=True)[:6]:
+    for p in sorted(pts, key=lambda p: p["score"], reverse=True)[:4]:
         px = ox + _scale(p["cost_per_task"], x_lo, x_hi, 0, IW)
         py = oy + _scale(p["score"], 0, y_hi, IH, 0)
-        out.append(f'<text x="{px + 6:.1f}" y="{py - 6:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}">{_esc(p["model"][:20])}</text>')
+        lx, ly, anchor = _label_coords(
+            px,
+            py,
+            plot_left=ox,
+            plot_right=ox + IW,
+            plot_top=oy,
+            plot_bottom=oy + IH,
+        )
+        out.append(f'<text x="{lx:.1f}" y="{ly:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}" text-anchor="{anchor}">{_esc(p["model"][:20])}</text>')
 
     out.append("</svg>")
     _write("efficiency-map.svg", "\n".join(out))
@@ -175,17 +216,25 @@ def _gen_confidence(data: dict) -> None:
         r = max(3, min(12, math.sqrt(arc) * 1.3))
         out.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="{r:.1f}" fill="{ARC_COLOR}" opacity="0.5"/>')
 
-    for p in sorted(pts, key=lambda p: p["hle_score"], reverse=True)[:6]:
+    for p in sorted(pts, key=lambda p: p["hle_score"], reverse=True)[:4]:
         px = ox + _scale(p["hle_score"], 0, x_hi, 0, IW)
         py = oy + _scale(p["calibration_error"], 0, y_hi, IH, 0)
-        out.append(f'<text x="{px + 6:.1f}" y="{py - 6:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}">{_esc(p["model"][:20])}</text>')
+        lx, ly, anchor = _label_coords(
+            px,
+            py,
+            plot_left=ox,
+            plot_right=ox + IW,
+            plot_top=oy,
+            plot_bottom=oy + IH,
+        )
+        out.append(f'<text x="{lx:.1f}" y="{ly:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}" text-anchor="{anchor}">{_esc(p["model"][:20])}</text>')
 
     out.append("</svg>")
     _write("confidence-lens.svg", "\n".join(out))
 
 
 def _gen_transfer_gap(data: dict) -> None:
-    pts = data.get("transfer_gap", {}).get("points", [])[:18]
+    pts = data.get("transfer_gap", {}).get("points", [])[:14]
     if not pts:
         return
 
@@ -224,7 +273,17 @@ def _gen_transfer_gap(data: dict) -> None:
         out.append(f'<line x1="{x1:.1f}" y1="{cy:.1f}" x2="{x2:.1f}" y2="{cy:.1f}" stroke="#a8bbb0" stroke-width="2"/>')
         out.append(f'<circle cx="{arc_x:.1f}" cy="{cy:.1f}" r="4" fill="{ARC_COLOR}"/>')
         out.append(f'<circle cx="{hle_x:.1f}" cy="{cy:.1f}" r="4" fill="{HLE_COLOR}"/>')
-        out.append(f'<text x="{x2 + 8:.1f}" y="{cy + 3:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}">{p["gap"]:+.1f}</text>')
+        lx, ly, anchor = _label_coords(
+            x2,
+            cy,
+            plot_left=ox,
+            plot_right=ox + iw,
+            plot_top=MARGIN["top"],
+            plot_bottom=bottom,
+            dx=8,
+            dy=3,
+        )
+        out.append(f'<text x="{lx:.1f}" y="{ly:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}" text-anchor="{anchor}">{p["gap"]:+.1f}</text>')
 
     out.append("</svg>")
     _write("transfer-gap.svg", "\n".join(out))
@@ -260,14 +319,25 @@ def _gen_twin_rivers(data: dict) -> None:
         out.append(f'<line x1="{ox}" y1="{py:.1f}" x2="{ox + IW}" y2="{py:.1f}" stroke="{GRID_COLOR}" stroke-width="0.5"/>')
         out.append(f'<text x="{ox - 8}" y="{py + 4:.1f}" font-family="{MONO}" font-size="10" fill="{MUTED_COLOR}" text-anchor="end">{yv:g}</text>')
 
-    # X labels (unique months)
+    # X labels (sampled months for readability in README previews)
+    month_points: list[tuple[int, dt_date]] = []
     seen_months: set[tuple[int, int]] = set()
     for p in sorted(dated, key=lambda x: x["_ord"]):
         ym = (p["_d"].year, p["_d"].month)
         if ym not in seen_months:
             seen_months.add(ym)
-            px = ox + _scale(p["_ord"], x_lo, x_hi, 0, IW)
-            out.append(f'<text x="{px:.1f}" y="{oy + IH + 16}" font-family="{MONO}" font-size="9" fill="{MUTED_COLOR}" text-anchor="middle">{p["_d"].strftime("%b %Y")}</text>')
+            month_points.append((p["_ord"], p["_d"]))
+
+    max_month_labels = 8
+    if month_points:
+        step = max(1, math.ceil(len(month_points) / max_month_labels))
+        sampled = month_points[::step]
+        if sampled[-1] != month_points[-1]:
+            sampled.append(month_points[-1])
+        for ord_value, label_date in sampled:
+            px = ox + _scale(ord_value, x_lo, x_hi, 0, IW)
+            out.append(f'<line x1="{px:.1f}" y1="{oy + IH}" x2="{px:.1f}" y2="{oy + IH + 5}" stroke="{GRID_COLOR}"/>')
+            out.append(f'<text x="{px:.1f}" y="{oy + IH + 16}" font-family="{MONO}" font-size="9" fill="{MUTED_COLOR}" text-anchor="middle">{label_date.strftime("%b %Y")}</text>')
 
     out.append(f'<line x1="{ox}" y1="{oy}" x2="{ox}" y2="{oy + IH}" stroke="{GRID_COLOR}"/>')
     out.append(f'<line x1="{ox}" y1="{oy + IH}" x2="{ox + IW}" y2="{oy + IH}" stroke="{GRID_COLOR}"/>')
@@ -291,10 +361,18 @@ def _gen_twin_rivers(data: dict) -> None:
             out.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="4" fill="{HLE_COLOR}"/>')
 
     # Label top-5
-    for p in sorted(dated, key=lambda p: p.get("arc_score", 0) or 0, reverse=True)[:5]:
+    for p in sorted(dated, key=lambda p: p.get("arc_score", 0) or 0, reverse=True)[:4]:
         px = ox + _scale(p["_ord"], x_lo, x_hi, 0, IW)
         py = oy + _scale(p.get("arc_score", 0) or 0, 0, y_hi, IH, 0)
-        out.append(f'<text x="{px + 6:.1f}" y="{py - 6:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}">{_esc(p["model"][:18])}</text>')
+        lx, ly, anchor = _label_coords(
+            px,
+            py,
+            plot_left=ox,
+            plot_right=ox + IW,
+            plot_top=oy,
+            plot_bottom=oy + IH,
+        )
+        out.append(f'<text x="{lx:.1f}" y="{ly:.1f}" font-family="{MONO}" font-size="9" fill="{TEXT_COLOR}" text-anchor="{anchor}">{_esc(p["model"][:18])}</text>')
 
     out.append("</svg>")
     _write("twin-rivers.svg", "\n".join(out))
