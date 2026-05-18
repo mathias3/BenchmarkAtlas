@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420"><rect width="900" height="420" fill="#fbfdfb" rx="8"/><text x="70" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1d2a1d">Confidence vs Competence</text><text x="70" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#5a6e58">38 models | HLE accuracy vs calibration error</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420"><rect width="900" height="420" fill="#fbfdfb" rx="8"/><text x="70" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1d2a1d">Confidence vs Competence</text><text x="70" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#5a6e58">40 models | HLE accuracy vs calibration error</text>
 <line x1="70" y1="370.0" x2="870" y2="370.0" stroke="#d3dfd4" stroke-width="0.5"/>
 <text x="62" y="374.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="end">0</text>
 <line x1="70" y1="308.0" x2="870" y2="308.0" stroke="#d3dfd4" stroke-width="0.5"/>
@@ -48,6 +48,7 @@
 <circle cx="475.1" cy="215.0" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="305.2" cy="171.3" r="4.8" fill="#0f766e" opacity="0.5"/>
 <circle cx="462.3" cy="195.2" r="5.2" fill="#0f766e" opacity="0.5"/>
+<circle cx="599.9" cy="238.1" r="4.7" fill="#0f766e" opacity="0.5"/>
 <circle cx="553.2" cy="228.1" r="9.6" fill="#0f766e" opacity="0.5"/>
 <circle cx="364.4" cy="146.5" r="3.4" fill="#0f766e" opacity="0.5"/>
 <circle cx="354.8" cy="157.0" r="3.0" fill="#0f766e" opacity="0.5"/>
@@ -69,6 +70,7 @@
 <circle cx="348.4" cy="144.2" r="3.0" fill="#0f766e" opacity="0.5"/>
 <circle cx="714.5" cy="243.3" r="10.5" fill="#0f766e" opacity="0.5"/>
 <circle cx="767.0" cy="240.0" r="11.4" fill="#0f766e" opacity="0.5"/>
+<circle cx="480.1" cy="188.8" r="5.0" fill="#0f766e" opacity="0.5"/>
 <text x="810.4" y="208.1" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Gemini 3.1 Pro</text>
 <text x="773.0" y="234.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">GPT-5.5</text>
 <text x="720.5" y="237.3" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">GPT-5.4</text>

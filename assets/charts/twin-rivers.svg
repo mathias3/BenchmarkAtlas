@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420"><rect width="900" height="420" fill="#fbfdfb" rx="8"/><text x="70" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1d2a1d">Twin Rivers Timeline</text><text x="70" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#5a6e58">160 models | ARC-AGI and HLE scores over time</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420"><rect width="900" height="420" fill="#fbfdfb" rx="8"/><text x="70" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1d2a1d">Twin Rivers Timeline</text><text x="70" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#5a6e58">162 models | ARC-AGI and HLE scores over time</text>
 <circle cx="70" cy="46" r="4" fill="#0f766e"/>
 <text x="78" y="49" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#5a6e58">ARC-AGI</text>
 <circle cx="139.5" cy="46" r="4" fill="#b91c1c"/>
@@ -29,8 +29,8 @@
 <text x="720.3" y="386" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="middle">Nov 2025</text>
 <line x1="799.1" y1="370" x2="799.1" y2="375" stroke="#d3dfd4"/>
 <text x="799.1" y="386" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="middle">Feb 2026</text>
-<line x1="862.9" y1="370" x2="862.9" y2="375" stroke="#d3dfd4"/>
-<text x="862.9" y="386" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="middle">Apr 2026</text>
+<line x1="854.1" y1="370" x2="854.1" y2="375" stroke="#d3dfd4"/>
+<text x="854.1" y="386" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#5a6e58" text-anchor="middle">Apr 2026</text>
 <line x1="70" y1="60" x2="70" y2="370" stroke="#d3dfd4"/>
 <line x1="70" y1="370" x2="870" y2="370" stroke="#d3dfd4"/>
 <text x="470.0" y="408" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#5a6e58" text-anchor="middle">Release date</text>
@@ -201,7 +201,9 @@
 <circle cx="829.2" cy="276.4" r="4" fill="#b91c1c"/>
 <circle cx="836.3" cy="297.1" r="4" fill="#b91c1c"/>
 <circle cx="836.3" cy="312.3" r="4" fill="#b91c1c"/>
+<circle cx="854.1" cy="290.5" r="4" fill="#b91c1c"/>
 <circle cx="862.9" cy="249.0" r="4" fill="#b91c1c"/>
+<circle cx="863.8" cy="267.3" r="4" fill="#b91c1c"/>
 <circle cx="866.5" cy="277.3" r="4" fill="#b91c1c"/>
 <circle cx="869.1" cy="235.0" r="4" fill="#b91c1c"/>
 <circle cx="870.0" cy="269.6" r="4" fill="#b91c1c"/>
