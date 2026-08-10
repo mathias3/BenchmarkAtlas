@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420"><rect width="900" height="420" fill="#fbfdfb" rx="8"/><text x="70" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1d2a1d">Confidence vs Competence</text><text x="70" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#5a6e58">50 models | HLE accuracy vs calibration error</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420"><rect width="900" height="420" fill="#fbfdfb" rx="8"/><text x="70" y="30" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#1d2a1d">Confidence vs Competence</text><text x="70" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#5a6e58">51 models | HLE accuracy vs calibration error</text>
 <line x1="70" y1="370.0" x2="870" y2="370.0" stroke="#d3dfd4" stroke-width="0.5"/>
 <text x="62" y="374.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="10" fill="#5a6e58" text-anchor="end">0</text>
 <line x1="70" y1="308.0" x2="870" y2="308.0" stroke="#d3dfd4" stroke-width="0.5"/>
@@ -76,15 +76,16 @@
 <circle cx="607.1" cy="243.3" r="10.5" fill="#0f766e" opacity="0.5"/>
 <circle cx="654.0" cy="240.5" r="11.4" fill="#0f766e" opacity="0.5"/>
 <circle cx="411.7" cy="188.8" r="5.0" fill="#0f766e" opacity="0.5"/>
-<circle cx="740.9" cy="290.9" r="4.1" fill="#0f766e" opacity="0.5"/>
+<circle cx="750.0" cy="296.9" r="4.1" fill="#0f766e" opacity="0.5"/>
+<circle cx="772.9" cy="290.9" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="676.9" cy="225.1" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="548.4" cy="212.9" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="494.0" cy="197.5" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="729.2" cy="291.5" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="621.7" cy="239.9" r="4.1" fill="#0f766e" opacity="0.5"/>
 <circle cx="593.7" cy="274.4" r="4.1" fill="#0f766e" opacity="0.5"/>
-<text x="746.9" y="284.9" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Fable 5</text>
+<text x="778.9" y="284.9" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Fable 5</text>
+<text x="756.0" y="290.9" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Opus 5</text>
 <text x="735.2" y="285.5" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Muse Spark 1.1</text>
 <text x="688.0" y="208.1" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Gemini 3.1 Pro</text>
-<text x="682.9" y="219.1" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">GPT-5.6 Sol</text>
 </svg>

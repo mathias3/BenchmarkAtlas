@@ -159,7 +159,7 @@
 <circle cx="156.1" cy="65.4" r="4" fill="#0f766e" opacity="0.5"/>
 <path d="M70.0,361.5 L70.0,317.3 L70.1,315.4 L70.2,271.2 L70.2,251.7 L70.4,189.8 L70.9,159.5 L71.9,122.0 L72.2,96.2 L73.4,84.8 L74.3,73.6 L76.0,66.2 L156.1,65.4 L342.0,60.0" fill="none" stroke="#b91c1c" stroke-width="2"/>
 <text x="348.0" y="74.0" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Human Panel</text>
-<text x="162.1" y="79.4" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">GPT-5.4 Pro (xHigh)</text>
+<text x="162.1" y="79.4" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">GPT-5.4 Pro (XHigh)</text>
 <text x="236.0" y="80.2" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Stem Grad</text>
 <text x="82.0" y="80.2" font-family="ui-monospace, 'SF Mono', monospace" font-size="9" fill="#1d2a1d" text-anchor="start">Gemini 3.1 Pro (Prev</text>
 </svg>
